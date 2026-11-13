@@ -33,6 +33,12 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 @keyframes revealIn{to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){#site-loader,#loader-progress,body.site-ready main,body.site-ready footer,body.site-ready .nav{transition:none}.loader-pulse{animation:none}.reveal-in{animation:none!important;opacity:1!important;transform:none!important}}
 
+
+/* Staggered content entrance */
+.reveal-item{opacity:0;transform:translateY(10px);animation:itemReveal .38s cubic-bezier(.2,.7,.25,1) both;animation-delay:var(--item-delay,0ms)}
+@keyframes itemReveal{to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.reveal-item{animation:none!important;opacity:1!important;transform:none!important}}
+
 </style>
 </head>
 
@@ -93,7 +99,24 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
       document.body.classList.remove('site-loading');
       document.body.classList.add('site-ready');
       document.querySelectorAll('main section,footer .foot').forEach((el,i)=>{
-        el.classList.add('reveal-in');el.style.animationDelay=Math.min(i*75,600)+'ms';
+        el.classList.add('reveal-in');el.style.animationDelay=Math.min(i*55,330)+'ms';
+      });
+      const entranceGroups = [
+        '#home .eyebrow, #home h1, #home .lead, #home .actions, #home .terminal, #home .code > div',
+        '#tracks .section-head > div, #tracks .section-head > p, #tracks .searchrow, #tracks .card',
+        '#tracks .card > *',
+        '#roadmap .section-head > *, #roadmap .step',
+        '#roadmap .step > *',
+        '#lab .lab > *, #lab .notice',
+        '#quiz .section-head > *, #quiz .quizbox > strong, #quiz .option',
+        '#about .about > *, #about .aboutbox > *',
+        'footer .foot > *'
+      ];
+      entranceGroups.forEach(selector=>{
+        document.querySelectorAll(selector).forEach((el,i)=>{
+          el.classList.add('reveal-item');
+          el.style.setProperty('--item-delay',Math.min(i*48,420)+'ms');
+        });
       });
       setTimeout(()=>loader.remove(),700);
     },350);
