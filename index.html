@@ -34,8 +34,13 @@
 #site-loader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#14291b 0,#080d0a 48%,#050706 100%);opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}
 #site-loader.done{opacity:0;visibility:hidden;pointer-events:none}
 .loader-card{width:min(360px,84vw);text-align:center;padding:30px 24px;border:1px solid #294432;border-radius:22px;background:#0a100deF;box-shadow:0 0 55px #8cff5715}
-.loader-brand{font-size:clamp(2rem,9vw,2.7rem);font-weight:950;letter-spacing:2px;color:var(--green);direction:ltr;text-shadow:0 0 22px #9cff5740}
-.loader-brand span{color:var(--red)}
+.loader-brand-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;direction:ltr;padding:12px 15px;margin:0 auto 4px;border:1px solid #47724b;border-radius:13px;background:linear-gradient(135deg,#13251aee,#080d0aee);box-shadow:0 0 24px #9cff5720,inset 0 0 16px #9cff5709}
+.loader-brand-wrap:before,.loader-brand-wrap:after{content:"";position:absolute;width:13px;height:13px;border-color:var(--red);border-style:solid}
+.loader-brand-wrap:before{top:-3px;left:-3px;border-width:2px 0 0 2px}
+.loader-brand-wrap:after{bottom:-3px;right:-3px;border-width:0 2px 2px 0}
+.loader-brand-mark{width:31px;height:31px;flex:0 0 31px;filter:drop-shadow(0 0 7px #9cff5760)}
+.loader-brand{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:clamp(1.65rem,7.5vw,2.35rem);font-weight:950;letter-spacing:1.2px;color:var(--green);direction:ltr;line-height:1;text-shadow:0 0 9px #9cff5780,0 0 24px #9cff5738}
+.loader-brand span{color:var(--red);text-shadow:0 0 12px #ff4057aa}
 .loader-sub{color:var(--muted);font-size:.9rem;margin:5px 0 24px}
 .loader-track{height:7px;border-radius:20px;background:#1b2a20;overflow:hidden;direction:ltr}
 #loader-progress{height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,var(--green2),var(--green));box-shadow:0 0 15px #9cff57;transition:width .18s ease}
@@ -72,7 +77,14 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 <body class="site-loading">
 <div id="site-loader" role="status" aria-live="polite" aria-label="جارٍ تحميل الموقع">
   <div class="loader-card">
-    <div class="loader-brand">Vairous7x<span>.</span></div>
+    <div class="loader-brand-wrap">
+      <svg class="loader-brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 3.5 42 10v13.2c0 10.2-7.1 17.2-18 21.3C13.1 40.4 6 33.4 6 23.2V10L24 3.5Z" fill="#101a13" stroke="#9cff57" stroke-width="1.8"/>
+        <path d="m14 14 7 20h6l7-20h-6l-4 12-4-12h-6Z" fill="#9cff57"/>
+        <path d="m34 11 3-3" stroke="#ff4057" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <div class="loader-brand">Vairous7x<span>.</span></div>
+    </div>
     <p class="loader-sub">أهلاً بك في موقع فيروس سفن اكس</p><p class="loader-sub"><span class="loader-pulse"></span> جارٍ تجهيز منصتك التعليمية...</p>
     <div class="loader-track"><div id="loader-progress"></div></div>
     <div class="loader-meta"><span id="loader-status">تهيئة الواجهة</span><span id="loader-percent">0%</span></div>
