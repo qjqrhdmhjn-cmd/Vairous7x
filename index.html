@@ -39,6 +39,10 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 @keyframes itemReveal{to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.reveal-item{animation:none!important;opacity:1!important;transform:none!important}}
 
+
+.welcome-line{color:var(--green);font-weight:800;font-size:1.08rem;margin:13px 0 4px;text-shadow:0 0 18px #9cff5720}
+#site-loader .loader-sub:first-of-type{font-weight:800;color:var(--green);font-size:1rem;margin:12px 0 8px}
+
 </style>
 </head>
 
@@ -46,7 +50,7 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 <div id="site-loader" role="status" aria-live="polite" aria-label="جارٍ تحميل الموقع">
   <div class="loader-card">
     <div class="loader-brand">Vairous7x<span>.</span></div>
-    <p class="loader-sub"><span class="loader-pulse"></span> جارٍ تجهيز منصتك التعليمية...</p>
+    <p class="loader-sub">أهلاً بك في موقع فيروس سفن اكس</p><p class="loader-sub"><span class="loader-pulse"></span> جارٍ تجهيز منصتك التعليمية...</p>
     <div class="loader-track"><div id="loader-progress"></div></div>
     <div class="loader-meta"><span id="loader-status">تهيئة الواجهة</span><span id="loader-percent">0%</span></div>
   </div>
@@ -55,7 +59,7 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 <header class="nav"><div class="wrap navin"><a class="brand" href="#home">Vairous7x<span>.</span></a><button class="menu" id="menu" aria-label="فتح القائمة">القائمة ☰</button><nav class="links" id="links"><a href="#tracks">المسارات</a><a href="#roadmap">خطة التعلم</a><a href="#lab">المختبر</a><a href="#quiz">اختبر نفسك</a><a href="#about">عن المنصة</a></nav></div></header>
 <main>
 <div class="wrap">
-<section class="hero" id="home"><div><span class="eyebrow"><span class="dot"></span> تعلّم • جرّب • احمِ</span><h1>ابدأ رحلتك في عالم <em>الأمن السيبراني</em></h1><p class="lead">منصة Vairous7x العربية للتعلّم العملي. افهم الشبكات، أتقن أساسيات البرمجة، وتعلّم كيف تكتشف الثغرات وتؤمّن الأنظمة — بمسؤولية وداخل بيئات تدريب مصرح بها.</p><div class="actions"><a class="btn primary" href="#tracks">استكشف المسارات ←</a><a class="btn secondary" href="#roadmap">شوف خطة التعلم</a></div></div><div class="terminal"><div class="termhead"><i></i><i></i><i></i></div><div class="code"><div class="dim"># Vairous7x learning terminal</div><div><b>user@Vairous7x</b>:~$ whoami</div><div>future_security_specialist</div><div><b>user@Vairous7x</b>:~$ cat mission.txt</div><div>Learn. Build. Secure.</div><div><b>user@Vairous7x</b>:~$ <span class="green">_</span></div></div></div></section>
+<section class="hero" id="home"><div><span class="eyebrow"><span class="dot"></span> تعلّم • جرّب • احمِ</span><p class="welcome-line">أهلاً بك في موقع فيروس سفن اكس</p><h1>ابدأ رحلتك في عالم <em>الأمن السيبراني</em></h1><p class="lead">منصة Vairous7x العربية للتعلّم العملي. افهم الشبكات، أتقن أساسيات البرمجة، وتعلّم كيف تكتشف الثغرات وتؤمّن الأنظمة — بمسؤولية وداخل بيئات تدريب مصرح بها.</p><div class="actions"><a class="btn primary" href="#tracks">استكشف المسارات ←</a><a class="btn secondary" href="#roadmap">شوف خطة التعلم</a></div></div><div class="terminal"><div class="termhead"><i></i><i></i><i></i></div><div class="code"><div class="dim"># Vairous7x learning terminal</div><div><b>user@Vairous7x</b>:~$ whoami</div><div>future_security_specialist</div><div><b>user@Vairous7x</b>:~$ cat mission.txt</div><div>Learn. Build. Secure.</div><div><b>user@Vairous7x</b>:~$ <span class="green">_</span></div></div></div></section>
 <div class="stats"><div class="stat"><strong>من الصفر</strong><span>مسارات متدرجة</span></div><div class="stat"><strong>عملي</strong><span>تطبيق ومراجعة</span></div><div class="stat"><strong>بالعربي</strong><span>شرح واضح ومباشر</span></div></div>
 <section id="tracks"><div class="section-head"><div><span class="kicker">LEARNING TRACKS</span><h2>اختار مسارك وابدأ</h2></div><p>ابدأ بالأساسيات، وبعدها اتخصص في المجال اللي يناسبك. ابحث عن أي مسار بالاسم.</p></div><div class="searchrow"><input id="search" type="search" placeholder="ابحث عن مسار... مثل الشبكات أو Linux" aria-label="ابحث عن مسار"></div><div class="grid" id="cards">
 <article class="card" data-terms="الشبكات network tcp ip dns osi"><div class="icon">⌁</div><h3>أساسيات الشبكات</h3><p>افهم IP وDNS وTCP/UDP ونموذج OSI وطريقة انتقال البيانات بين الأجهزة.</p><span class="tag">مبتدئ</span></article>
@@ -81,17 +85,21 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
   const percent=document.getElementById('loader-percent');
   const status=document.getElementById('loader-status');
   const loader=document.getElementById('site-loader');
-  let progress=0,finished=false;
+  const startedAt=Date.now();
+  const minimumDuration=3000;
+  let loaded=false,finished=false;
   const stages=['تهيئة الواجهة','تجهيز المسارات التعليمية','تحميل عناصر المنصة','تقريبًا انتهينا...'];
   const ticker=setInterval(()=>{
     if(finished)return;
-    progress=Math.min(90,progress+(progress<55?3:progress<78?1.2:.35));
+    const elapsed=Date.now()-startedAt;
+    const progress=Math.min(96,(elapsed/minimumDuration)*96);
     bar.style.width=progress+'%';
     percent.textContent=Math.floor(progress)+'%';
     status.textContent=stages[Math.min(3,Math.floor(progress/25))];
-  },85);
+    if(loaded && elapsed>=minimumDuration) finish();
+  },45);
   function finish(){
-    if(finished)return;
+    if(finished || !loaded || Date.now()-startedAt<minimumDuration)return;
     finished=true;clearInterval(ticker);
     bar.style.width='100%';percent.textContent='100%';status.textContent='اكتمل التحميل';
     setTimeout(()=>{
@@ -102,7 +110,7 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
         el.classList.add('reveal-in');el.style.animationDelay=Math.min(i*55,330)+'ms';
       });
       const entranceGroups = [
-        '#home .eyebrow, #home h1, #home .lead, #home .actions, #home .terminal, #home .code > div',
+        '#home .eyebrow, #home .welcome-line, #home h1, #home .lead, #home .actions, #home .terminal, #home .code > div',
         '#tracks .section-head > div, #tracks .section-head > p, #tracks .searchrow, #tracks .card',
         '#tracks .card > *',
         '#roadmap .section-head > *, #roadmap .step',
@@ -119,11 +127,12 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
         });
       });
       setTimeout(()=>loader.remove(),700);
-    },350);
+    },250);
   }
-  if(document.readyState==='complete')finish();
-  else window.addEventListener('load',finish,{once:true});
-  window.addEventListener('pageshow',e=>{if(e.persisted)finish()});
+  function onLoaded(){loaded=true;finish()}
+  if(document.readyState==='complete')onLoaded();
+  else window.addEventListener('load',onLoaded,{once:true});
+  window.addEventListener('pageshow',e=>{if(e.persisted)onLoaded()});
 })();
 </script>
 
