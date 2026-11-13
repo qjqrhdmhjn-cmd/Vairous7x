@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qjqrhdmhjn-cmd.github.io/Vairous7x/sitemap.xml
