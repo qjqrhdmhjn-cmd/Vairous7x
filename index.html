@@ -74,35 +74,38 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 .hero-photo{width:100%;max-width:430px;margin-inline:auto;overflow:hidden;border:1px solid #59303a;border-radius:22px;background:#080d0a;box-shadow:0 0 35px #8cff5720,0 0 30px #ff405710;transform:rotate(1deg)}.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;border-radius:inherit}@media(max-width:800px){.hero-photo{max-width:520px;transform:none}}
 
 /* Integrated cyber hero: portrait blended into the scene, not a framed card */
-.hero-integrated{position:relative;display:block;min-height:700px;padding:78px 0 80px;isolation:isolate;overflow:hidden}
-.hero-integrated:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 18% 72%,#163c20a8 0,transparent 38%),radial-gradient(ellipse at 78% 18%,#2b111c66 0,transparent 36%),linear-gradient(110deg,#070a09 0%,#09120c 52%,#070a09 100%)}
-.hero-copy{position:relative;z-index:3;width:min(760px,72%);padding-top:10px}
+.hero-integrated{position:relative;display:grid;grid-template-columns:minmax(310px,.92fr) minmax(0,1.08fr);align-items:center;gap:clamp(24px,5vw,64px);min-height:660px;padding:64px 0 72px;isolation:isolate;overflow:hidden}
+.hero-integrated:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 18% 72%,#163c20a8 0,transparent 38%),radial-gradient(ellipse at 78% 18%,#15345b88 0,transparent 42%),linear-gradient(110deg,#070a09 0%,#091321 52%,#070a09 100%)}
+.hero-copy{position:relative;z-index:3;grid-column:2;grid-row:1;width:100%;padding-top:10px}
 .hero-integrated h1{max-width:740px;text-shadow:0 3px 22px #000}
 .hero-integrated .lead{max-width:650px;text-shadow:0 2px 14px #000}
-.hero-visual{position:absolute;z-index:1;left:-2%;bottom:-4%;width:min(51%,590px);height:96%;display:flex;align-items:flex-end;justify-content:center;pointer-events:none}
-.hero-visual:before{content:"";position:absolute;inset:4% 0 0;background:radial-gradient(ellipse at 52% 58%,#9cff5726 0,transparent 48%),linear-gradient(90deg,transparent 45%,#080d0a 100%);z-index:2}
-.hero-visual img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:center bottom;border:0;border-radius:0;box-shadow:none;transform:none;filter:drop-shadow(0 0 26px #9cff5725);-webkit-mask-image:radial-gradient(ellipse 76% 76% at 52% 53%,#000 55%,#000b 72%,transparent 100%);mask-image:radial-gradient(ellipse 76% 76% at 52% 53%,#000 55%,#000b 72%,transparent 100%)}
-.server-stack{position:absolute;z-index:0;bottom:15%;width:72px;height:245px;border:1px solid #6da94c66;border-radius:9px;background:repeating-linear-gradient(to bottom,transparent 0 48px,#9cff5730 49px 50px),linear-gradient(110deg,#102017dd,#080d0bee);box-shadow:0 0 24px #9cff5718,inset 0 0 20px #9cff5710;opacity:.8}
-.server-stack i{display:block;height:7px;margin:17px 10px 0;border-radius:8px;background:#9cff57;opacity:.65;box-shadow:0 0 9px #9cff57}
-.server-one{left:3%;transform:perspective(300px) rotateY(10deg)}
-.server-two{left:22%;height:190px;bottom:10%;transform:perspective(300px) rotateY(-9deg);opacity:.55}
-.circuit-orbit{position:absolute;z-index:0;left:8%;bottom:8%;width:390px;height:390px;border:1px solid #9cff572b;border-radius:50%;box-shadow:0 0 0 22px #9cff5707,0 0 0 54px #9cff5705,0 0 45px #9cff5715}
-.circuit-orbit:before,.circuit-orbit:after{content:"";position:absolute;background:#9cff57;box-shadow:0 0 12px #9cff57}
-.circuit-orbit:before{width:7px;height:7px;border-radius:50%;top:18%;right:10%}
-.circuit-orbit:after{width:5px;height:5px;border-radius:50%;bottom:22%;left:8%}
+.hero-visual{position:relative;z-index:2;grid-column:1;grid-row:1;width:100%;max-width:470px;aspect-ratio:1;margin:auto;display:grid;place-items:center;pointer-events:none}
+.portrait-orbit{position:absolute;inset:7%;border:1px solid #4e9cff88;border-radius:50%;box-shadow:0 0 0 15px #4e9cff0b,0 0 0 38px #e8b84a0a,0 0 50px #238dff25;transform:rotate(-14deg)}
+.portrait-orbit:before,.portrait-orbit:after{content:"";position:absolute;border:1px dashed #e8b84a77;border-radius:50%;inset:-10%}
+.portrait-orbit:after{inset:12%;border-color:#4e9cff66;transform:rotate(35deg)}
+.portrait-frame{position:relative;width:70%;aspect-ratio:1;border-radius:50%;padding:7px;background:linear-gradient(140deg,#f4ca62,#2d79ff 52%,#e4b84e);box-shadow:0 0 28px #2b86ff44,0 0 55px #e8b84a1c}
+.portrait-frame:before{content:"";position:absolute;inset:-8px;border:1px solid #d7b65b77;border-radius:50%;pointer-events:none}
+.portrait-frame img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 25%;border:3px solid #08101d;box-shadow:inset 0 0 18px #000}
+.profile-chip{position:absolute;z-index:4;display:flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid #b68f4c99;border-radius:14px;background:#091426eF;color:#eaf1ff;box-shadow:0 8px 28px #0008;font-size:.83rem;white-space:nowrap}
+.profile-chip b{color:#f3c65b}.profile-chip small{display:block;color:#9eafc8;font-size:.72rem}
+.chip-top{top:12%;right:-1%}.chip-bottom{bottom:13%;left:-2%}
+.profile-status{position:absolute;bottom:-1%;left:50%;transform:translateX(-50%);width:max-content;max-width:95%;padding:10px 18px;border:1px solid #4e76a6aa;border-radius:99px;background:#0a1428eF;color:#b9c9e7;text-align:center;font: .78rem ui-monospace,monospace;box-shadow:0 0 25px #287bff1a}
+.profile-status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f3c65b;box-shadow:0 0 10px #f3c65b;margin-inline-end:8px}
+.server-stack{position:absolute;z-index:0;bottom:12%;width:58px;height:190px;border:1px solid #4b8ac477;border-radius:9px;background:repeating-linear-gradient(to bottom,transparent 0 38px,#4e9cff35 39px 40px),linear-gradient(110deg,#10213bdd,#080d18ee);box-shadow:0 0 24px #238dff25,inset 0 0 20px #238dff10;opacity:.8}
+.server-stack i{display:block;height:6px;margin:14px 8px 0;border-radius:8px;background:#54b7ff;opacity:.7;box-shadow:0 0 9px #238dff}
+.server-one{left:0;transform:perspective(300px) rotateY(10deg)}
+.server-two{right:0;height:150px;bottom:8%;transform:perspective(300px) rotateY(-9deg);opacity:.55}
 @media(max-width:800px){
- .hero-integrated{min-height:0;padding:45px 0 0;display:flex;flex-direction:column;gap:0}
- .hero-copy{width:100%;padding:0 0 8px}
+ .hero-integrated{min-height:0;padding:42px 0 34px;display:flex;flex-direction:column;gap:18px}
+ .hero-copy{width:100%;padding:0;order:1}
  .hero-integrated h1{font-size:clamp(2.5rem,10vw,4rem);margin:17px 0}
  .hero-integrated .lead{max-width:100%}
- .hero-visual{position:relative;left:auto;bottom:auto;width:100%;height:auto;min-height:380px;margin-top:-8px;align-self:center}
- .hero-visual img{width:100%;height:auto;max-height:560px;object-fit:contain;object-position:center bottom}
- .hero-visual:before{inset:0;background:radial-gradient(ellipse at 50% 65%,#9cff5720 0,transparent 58%),linear-gradient(to bottom,#080d0a00 65%,#080d0a 100%)}
+ .hero-visual{order:2;width:min(100%,420px);margin:18px auto 24px}
+ .profile-status{bottom:-4%}
+ .chip-top{right:-2%}.chip-bottom{left:-2%}
  .server-stack{bottom:12%;transform:scale(.78)!important}
- .server-one{left:1%}.server-two{left:auto;right:2%}
- .circuit-orbit{width:280px;height:280px;left:calc(50% - 140px);bottom:5%}
 }
-@media(max-width:520px){.hero-visual{min-height:320px}.hero-visual img{max-height:440px}.server-stack{width:54px;height:170px}.server-two{height:140px}.circuit-orbit{width:220px;height:220px;left:calc(50% - 110px)}}
+@media(max-width:520px){.hero-visual{width:min(100%,350px)}.profile-chip{font-size:.72rem;padding:7px 10px}.portrait-frame{width:68%}.profile-status{font-size:.68rem;padding:8px 12px}.server-stack{width:44px;height:145px}.server-two{height:115px}}
 
 </style>
 </head>
@@ -135,7 +138,7 @@ body.site-ready .reveal-in{animation:revealIn .65s ease both}
 </a><button class="menu" id="menu" aria-label="فتح القائمة">القائمة ☰</button><nav class="links" id="links"><a href="#tracks">المسارات</a><a href="#roadmap">خطة التعلم</a><a href="#lab">المختبر</a><a href="#quiz">اختبر نفسك</a><a href="#about">عن المنصة</a></nav><a class="r-emblem" href="#home" aria-label="R logo"><span>R</span></a></div></header>
 <main>
 <div class="wrap">
-<section class="hero hero-integrated" id="home"><div class="hero-copy"><span class="eyebrow"><span class="dot"></span> تعلّم • جرّب • احمِ</span><p class="welcome-line">أهلاً بك في موقع فيروس سفن اكس</p><h1>ابدأ رحلتك في عالم <em>الأمن السيبراني</em></h1><p class="lead">منصة Vairous7x العربية للتعلّم العملي. افهم الشبكات، أتقن أساسيات البرمجة، وتعلّم كيف تكتشف الثغرات وتؤمّن الأنظمة — بمسؤولية وداخل بيئات تدريب مصرح بها.</p><div class="actions"><a class="btn primary" href="#tracks">استكشف المسارات ←</a><a class="btn secondary" href="#roadmap">شوف خطة التعلم</a></div></div><div class="hero-visual" aria-label="مشهد Vairous7x للأمن السيبراني"><div class="server-stack server-one"><i></i><i></i><i></i><i></i></div><div class="server-stack server-two"><i></i><i></i><i></i><i></i></div><div class="circuit-orbit"></div><img src="D8773EBD-400E-4443-84B0-239D7AEE1D30.jpeg" alt="صورة مؤسس منصة Vairous7x" fetchpriority="high"></div></section>
+<section class="hero hero-integrated" id="home"><div class="hero-copy"><span class="eyebrow"><span class="dot"></span> تعلّم • جرّب • احمِ</span><p class="welcome-line">أهلاً بك في موقع فيروس سفن اكس</p><h1>ابدأ رحلتك في عالم <em>الأمن السيبراني</em></h1><p class="lead">منصة Vairous7x العربية للتعلّم العملي. افهم الشبكات، أتقن أساسيات البرمجة، وتعلّم كيف تكتشف الثغرات وتؤمّن الأنظمة — بمسؤولية وداخل بيئات تدريب مصرح بها.</p><div class="actions"><a class="btn primary" href="#tracks">استكشف المسارات ←</a><a class="btn secondary" href="#roadmap">شوف خطة التعلم</a></div></div><div class="hero-visual" aria-label="ملف Vairous7x التعريفي"><div class="server-stack server-one"><i></i><i></i><i></i><i></i></div><div class="server-stack server-two"><i></i><i></i><i></i><i></i></div><div class="portrait-orbit"></div><div class="portrait-frame"><img src="D8773EBD-400E-4443-84B0-239D7AEE1D30.jpeg" alt="الصورة الرئيسية لمنصة Vairous7x" fetchpriority="high"></div><div class="profile-chip chip-top"><span>⬡</span><span><b>Vairous7x</b><small>Cybersecurity Learning</small></span></div><div class="profile-chip chip-bottom"><span>⌘</span><span><b>مسارات عملية</b><small>Networks • Linux • Web</small></span></div><div class="profile-status"><i></i> تعلّم • جرّب • احمِ — بمسؤولية</div></div></section>
 <div class="stats"><div class="stat"><strong>من الصفر</strong><span>مسارات متدرجة</span></div><div class="stat"><strong>عملي</strong><span>تطبيق ومراجعة</span></div><div class="stat"><strong>بالعربي</strong><span>شرح واضح ومباشر</span></div></div>
 <section id="tracks"><div class="section-head"><div><span class="kicker">LEARNING TRACKS</span><h2>اختار مسارك وابدأ</h2></div><p>ابدأ بالأساسيات، وبعدها اتخصص في المجال اللي يناسبك. ابحث عن أي مسار بالاسم.</p></div><div class="searchrow"><input id="search" type="search" placeholder="ابحث عن مسار... مثل الشبكات أو Linux" aria-label="ابحث عن مسار"></div><div class="grid" id="cards">
 <article class="card" data-terms="الشبكات network tcp ip dns osi"><div class="icon">⌁</div><h3>أساسيات الشبكات</h3><p>افهم IP وDNS وTCP/UDP ونموذج OSI وطريقة انتقال البيانات بين الأجهزة.</p><span class="tag">مبتدئ</span></article>
