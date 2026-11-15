@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#080b0a">
+<title>دخول الأدمن | Vairous7x</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 50% 35%,#142b20,#080b0a 65%);color:#f4f7f3;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.card{width:min(100%,420px);padding:32px;border:1px solid #34523b;border-radius:24px;background:#0a100ef2;box-shadow:0 20px 70px #0009,0 0 35px #9cff5710}
+.logo{font-size:28px;font-weight:900;direction:ltr;text-align:center;color:#9cff57;letter-spacing:.5px}.logo span{color:#f3f4f3}
+h1{text-align:center;font-size:23px;margin:20px 0 8px}p{color:#aab8ad;text-align:center;line-height:1.8;margin:0 0 24px}
+label{display:block;margin-bottom:9px;color:#dce8dc;font-weight:700}input{width:100%;padding:15px;border:1px solid #34473a;border-radius:12px;background:#080d0a;color:white;font-size:17px;outline:none}input:focus{border-color:#9cff57;box-shadow:0 0 0 3px #9cff5720}
+button{width:100%;margin-top:16px;padding:14px;border:0;border-radius:12px;background:#9cff57;color:#071007;font-size:17px;font-weight:900;cursor:pointer}
+#error{min-height:26px;margin-top:14px;color:#ff7777;text-align:center;font-size:14px}.hint{text-align:center;color:#6f8173;font-size:12px;margin-top:18px}
+</style></head>
+<body><main class="card"><div class="logo">Vairous<span>7x</span></div><h1>دخول لوحة التحكم</h1><p>منطقة خاصة بإدارة موقع Vairous7x. سجّل الدخول بكلمة مرور الأدمن.</p>
+<form id="login"><label for="password">كلمة مرور الأدمن</label><input id="password" type="password" autocomplete="current-password" required placeholder="اكتب كلمة المرور"><button type="submit">تسجيل الدخول</button><div id="error" role="alert"></div></form>
+<div class="hint">اتصال آمن • تنتهي الجلسة بعد 8 ساعات</div></main>
+<script>
+document.getElementById("login").addEventListener("submit",async e=>{e.preventDefault();const button=e.currentTarget.querySelector("button"),error=document.getElementById("error");button.disabled=true;button.textContent="جارٍ التحقق...";error.textContent="";try{const r=await fetch("/api/admin/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password:document.getElementById("password").value})});const data=await r.json();if(!r.ok)throw new Error(data.error||"تعذر تسجيل الدخول");location.href="/admin/panel.html"}catch(err){error.textContent=err.message;button.disabled=false;button.textContent="تسجيل الدخول"}});
+</script></body></html>
