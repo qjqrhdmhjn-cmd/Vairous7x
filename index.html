@@ -27,9 +27,37 @@ nav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700;colo
 .lower{padding:54px 28px;background:#08080a}.section-title{text-align:center;margin:0 0 28px}.section-title small{font:700 11px Orbitron;color:#f3263c;letter-spacing:3px}.section-title h2{font:800 29px Orbitron;margin:9px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#151518,#09090b);border:1px solid #ffffff1b;border-radius:9px;padding:23px;min-height:155px}.card .ico{color:#ff233a;font-size:25px}.card h3{font:700 17px Orbitron;margin:12px 0 8px}.card p{color:#b5b2b5;font-size:16px;line-height:1.45;margin:0}.cta{text-align:center;border:1px solid #ff23384a;background:radial-gradient(ellipse at top,#64101b55,transparent 70%),#111;padding:30px;border-radius:10px}.cta h2{font:800 25px Orbitron;margin:0 0 10px}.cta p{color:#bbb;font-size:17px}.footer{padding:20px;text-align:center;border-top:1px solid #ffffff1b;color:#888;font-size:14px}.footer b{color:#f22}
 @media(max-width:850px){header{padding:0 18px}.brand{min-width:0}.brand-name{font-size:25px}nav{gap:13px;font-size:14px}.hero-copy{left:15%;width:58%}}
 @media(max-width:650px){header{height:66px}.brand-mark{width:46px;height:46px}.brand-name{font-size:24px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px;background:#09090b;flex-direction:column;align-items:stretch;gap:15px;border-bottom:1px solid #f22}nav.open{display:flex}nav a.active{padding:0;border:0}.nav-join{justify-content:center}.hero{height:430px}.hero-art{width:160%;left:-28%;object-fit:cover}.hero:after{background:linear-gradient(90deg,#07080ceF 0%,#07080cb8 48%,#07080c30 100%),linear-gradient(0deg,#07080c88,transparent 60%)}.hero-copy{left:7%;top:43%;transform:translateY(-50%);width:78%}.hero-copy h1{font-size:35px}.hero-word{font-size:53px}.hero-copy p{font-size:16px;max-width:300px}.lower{padding:42px 18px}.cards{grid-template-columns:1fr}.section-title h2{font-size:24px}}
+
+/* Original Vairous7x intro loading screen */
+#site-loader{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#360914 0,#0b080b 48%,#030304 100%);opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}
+#site-loader.done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-card{width:min(370px,86vw);text-align:center;padding:30px 24px;border:1px solid #70202b;border-radius:18px;background:#0b090bf0;box-shadow:0 0 55px #ff17351c}
+.loader-brand{font-family:Orbitron,Arial,sans-serif;font-size:clamp(1.8rem,9vw,2.6rem);font-weight:900;letter-spacing:1.2px;color:#f5f3f4;direction:ltr;text-shadow:0 0 22px #ff17354a}
+.loader-brand span{color:#ff233b}
+.loader-sub{color:#c2b8bc;font-size:1rem;margin:9px 0 22px}
+.loader-track{height:7px;border-radius:20px;background:#291016;overflow:hidden;direction:ltr}
+#loader-progress{height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,#a80920,#ff263f);box-shadow:0 0 15px #ff1735;transition:width .12s ease}
+.loader-meta{display:flex;justify-content:space-between;gap:10px;margin-top:11px;color:#b8aeb2;font-size:.82rem}
+#loader-percent{color:#ff4057;font-variant-numeric:tabular-nums}
+.loader-pulse{width:8px;height:8px;border-radius:50%;display:inline-block;background:#ff233b;margin-right:7px;box-shadow:0 0 12px #ff233b;animation:loaderPulse 1s infinite alternate}
+@keyframes loaderPulse{to{opacity:.3;transform:scale(.7)}}
+body.site-loading{overflow:hidden}
+body.site-loading .site>header,body.site-loading .site>main{opacity:0}
+body.site-ready .site>header,body.site-ready .site>main{opacity:1;transition:opacity .45s ease}
+@media(prefers-reduced-motion:reduce){#site-loader,#loader-progress,body.site-ready .site>header,body.site-ready .site>main{transition:none}.loader-pulse{animation:none}}
+
 </style>
 </head>
-<body><div class="site">
+<body class="site-loading">
+<div id="site-loader" role="status" aria-live="polite" aria-label="Loading Vairous7x">
+  <div class="loader-card">
+    <div class="loader-brand">Vairous<span>7x</span></div>
+    <p class="loader-sub">أهلاً بك في Vairous7x<br><span class="loader-pulse"></span>جارٍ تجهيز الموقع...</p>
+    <div class="loader-track"><div id="loader-progress"></div></div>
+    <div class="loader-meta"><span id="loader-status">تهيئة الواجهة</span><span id="loader-percent">0%</span></div>
+  </div>
+</div>
+<div class="site">
 <header>
 <a class="brand" href="#home" aria-label="Vairous7x home">
 <span class="brand-mark"><svg viewBox="0 0 70 65" aria-hidden="true"><path d="M23 5 L35 0 L47 5 L43 12 L27 12Z" fill="#d6b56a" stroke="#fff0b4"/><path d="M17 13 L35 20 L53 13 L63 20 L42 59 L35 65 L28 59 L7 20Z" fill="#08090b" stroke="#f21b30" stroke-width="3"/><path d="M18 22 L35 31 L52 22 L38 53 L35 57 L32 53Z" fill="none" stroke="#ff172d" stroke-width="3"/><path d="M26 24 L35 30 L44 24" fill="none" stroke="#ff6a76" stroke-width="2"/></svg></span>
@@ -78,4 +106,40 @@ nav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700;colo
 <section class="lower" id="join"><div class="cta"><h2>READY TO EXPLORE?</h2><p>Learn. Explore. Build your skills with Vairous7x.</p><a class="explore" href="#contact">Join the community ➜</a></div></section>
 <footer class="footer" id="contact">© 2026 <b>VAIROUS7X</b> — LEARN • EXPLORE • HACK</footer>
 </main></div>
+
+<script>
+(()=> {
+  const bar=document.getElementById('loader-progress');
+  const percent=document.getElementById('loader-percent');
+  const status=document.getElementById('loader-status');
+  const loader=document.getElementById('site-loader');
+  const startedAt=Date.now(), minimumDuration=3000;
+  let loaded=document.readyState==='complete', finished=false;
+  const stages=['تهيئة الواجهة','تجهيز الصفحة الرئيسية','تحميل عناصر الموقع','تقريبًا انتهينا...'];
+  const ticker=setInterval(()=>{
+    if(finished)return;
+    const elapsed=Date.now()-startedAt;
+    const progress=Math.min(96,(elapsed/minimumDuration)*96);
+    bar.style.width=progress+'%';
+    percent.textContent=Math.floor(progress)+'%';
+    status.textContent=stages[Math.min(3,Math.floor(progress/25))];
+    if(loaded&&elapsed>=minimumDuration)finish();
+  },45);
+  function finish(){
+    if(finished||!loaded||Date.now()-startedAt<minimumDuration)return;
+    finished=true;clearInterval(ticker);
+    bar.style.width='100%';percent.textContent='100%';status.textContent='اكتمل التحميل';
+    setTimeout(()=>{
+      loader.classList.add('done');
+      document.body.classList.remove('site-loading');
+      document.body.classList.add('site-ready');
+      setTimeout(()=>loader.remove(),650);
+    },250);
+  }
+  function onLoaded(){loaded=true;finish()}
+  if(!loaded)window.addEventListener('load',onLoaded,{once:true});
+  window.addEventListener('pageshow',e=>{if(e.persisted){loaded=true;finish()}});
+})();
+</script>
+
 </body></html>
