@@ -1,121 +1,138 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050506">
-<meta name="description" content="Vairous7x — The ultimate hub for hackers, learners and explorers.">
-<title>Vairous7x | The Ultimate Hub</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#080b0a">
+<meta name="description" content="Vairous7x — منصة عربية لتعلم الأمن السيبراني والشبكات والبرمجة بشكل عملي وآمن.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://qjqrhdmhjn-cmd.github.io/Vairous7x/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:site_name" content="Vairous7x">
+<meta property="og:title" content="Vairous7x | تعلّم الأمن السيبراني بالعربي">
+<meta property="og:description" content="منصة عربية لتعلّم الأمن السيبراني والشبكات وحماية Wi-Fi وLinux والبرمجة بشكل عملي وآمن.">
+<meta property="og:url" content="https://qjqrhdmhjn-cmd.github.io/Vairous7x/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Vairous7x","alternateName":"فيروس سفن اكس","url":"https://qjqrhdmhjn-cmd.github.io/Vairous7x/","description":"منصة عربية لتعلّم الأمن السيبراني والشبكات والبرمجة بشكل عملي وآمن.","inLanguage":"ar"}
+</script>
+<title>Vairous7x | تعلّم الأمن السيبراني</title>
 <style>
-:root{--red:#ff172d;--red-dark:#8d0717;--black:#050506;--white:#f5f3f4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050506;color:var(--white);font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
-.site{width:min(1180px,100%);margin:0 auto;background:#050506;min-height:100vh;box-shadow:0 0 55px #000}
-header{height:70px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,#111114,#070708);border-bottom:1px solid #ffffff24;position:relative;z-index:10}
-.brand{display:flex;align-items:center;gap:10px;min-width:230px}.brand-mark{width:55px;height:54px;position:relative;display:grid;place-items:center}.brand-mark svg{width:100%;height:100%;filter:drop-shadow(0 0 7px #f10)}.brand-name{font:italic 900 30px 'Permanent Marker',cursive;letter-spacing:-1.8px;text-shadow:0 2px 5px #000}.brand-name span{color:#f21b30}
-nav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700;color:#e5e2e4}nav a{display:flex;align-items:center;gap:7px;white-space:nowrap;transition:.2s}nav a:hover,nav a.active{color:var(--red)}nav a.active{border-bottom:2px solid var(--red);padding:24px 0 20px}.nav-join{border:1px solid var(--red);border-radius:7px;padding:8px 13px;color:#ff3347;box-shadow:0 0 12px #ff15252b}.nav-join:hover{background:#e20e24;color:white}.nav-icon{font-size:18px;line-height:1}.search{font-size:24px}.menu{display:none;border:1px solid #ffffff44;background:#111;color:white;border-radius:5px;padding:8px 11px}
-.hero{height:318px;position:relative;isolation:isolate;overflow:hidden;background:#08090d}
-.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
-.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#07080c 0%,#07080ce8 27%,#07080c50 56%,#0505071c 100%)}
-.hero-copy{position:absolute;left:22%;top:50%;transform:translateY(-50%);width:48%;z-index:2}
-.hero-copy h1{font:900 clamp(34px,4vw,48px)/1.05 Arial,sans-serif;margin:0 0 1px;letter-spacing:-1.5px;color:#f6f5f5;text-shadow:0 3px 8px #000}
-.hero-word{font:italic 900 clamp(52px,6vw,76px)/.98 'Permanent Marker',cursive;letter-spacing:-3px;margin:0 0 7px;color:#fff;text-shadow:0 3px 2px #000,0 0 18px #f000}.hero-word span{color:#f51b32}
-.hero-copy p{font-size:18px;font-weight:700;margin:0 0 22px;color:#f1edef;text-shadow:0 2px 5px #000}
-.explore{display:inline-flex;align-items:center;gap:12px;padding:9px 22px;border:1.5px solid #ff2338;border-radius:7px;color:#ff3348;font-size:17px;font-weight:700;background:#08080bd9;box-shadow:0 0 12px #f00a;transition:.2s}.explore:hover{background:#e90d26;color:#fff;box-shadow:0 0 22px #ff173d88}
-.lower{padding:54px 28px;background:#08080a}.section-title{text-align:center;margin:0 0 28px}.section-title small{font:700 11px Orbitron;color:#f3263c;letter-spacing:3px}.section-title h2{font:800 29px Orbitron;margin:9px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#151518,#09090b);border:1px solid #ffffff1b;border-radius:9px;padding:23px;min-height:155px}.card .ico{color:#ff233a;font-size:25px}.card h3{font:700 17px Orbitron;margin:12px 0 8px}.card p{color:#b5b2b5;font-size:16px;line-height:1.45;margin:0}.cta{text-align:center;border:1px solid #ff23384a;background:radial-gradient(ellipse at top,#64101b55,transparent 70%),#111;padding:30px;border-radius:10px}.cta h2{font:800 25px Orbitron;margin:0 0 10px}.cta p{color:#bbb;font-size:17px}.footer{padding:20px;text-align:center;border-top:1px solid #ffffff1b;color:#888;font-size:14px}.footer b{color:#f22}
-@media(max-width:850px){header{padding:0 18px}.brand{min-width:0}.brand-name{font-size:25px}nav{gap:13px;font-size:14px}.hero-copy{left:15%;width:58%}}
-@media(max-width:650px){header{height:66px}.brand-mark{width:46px;height:46px}.brand-name{font-size:24px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px;background:#09090b;flex-direction:column;align-items:stretch;gap:15px;border-bottom:1px solid #f22}nav.open{display:flex}nav a.active{padding:0;border:0}.nav-join{justify-content:center}.hero{height:430px}.hero-art{width:160%;left:-28%;object-fit:cover}.hero:after{background:linear-gradient(90deg,#07080ceF 0%,#07080cb8 48%,#07080c30 100%),linear-gradient(0deg,#07080c88,transparent 60%)}.hero-copy{left:7%;top:43%;transform:translateY(-50%);width:78%}.hero-copy h1{font-size:35px}.hero-word{font-size:53px}.hero-copy p{font-size:16px;max-width:300px}.lower{padding:42px 18px}.cards{grid-template-columns:1fr}.section-title h2{font-size:24px}}
+:root{--bg:#070a09;--panel:#0d1310;--panel2:#111a15;--line:#203329;--green:#9cff57;--green2:#5be38b;--red:#ff4057;--red2:#ff7180;--text:#f1f7f1;--muted:#9eafa4;--glow:0 0 35px #8cff5720}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#18351f 0,transparent 34%),radial-gradient(ellipse at 8% 18%,#4a111b55 0,transparent 30%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:#080c0beF;backdrop-filter:blur(14px);border-bottom:1px solid #1d2c23}.navin{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:18px}.brand{display:inline-flex;align-items:center;gap:10px;font-weight:900;letter-spacing:0;font-size:1.42rem;color:var(--green);direction:ltr;white-space:nowrap;transition:transform .2s ease,filter .2s ease}.brand:hover{transform:translateY(-1px);filter:drop-shadow(0 0 8px #9cff5755)}.brand-mark{width:37px;height:37px;flex:0 0 37px;color:var(--green);filter:drop-shadow(0 0 7px #9cff5740)}.brand-word{display:inline-flex;align-items:baseline;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-weight:950;letter-spacing:-1.1px;line-height:1;text-shadow:0 0 15px #9cff5722}.brand-x{color:#f1f7f1;margin-left:1px;font-weight:850;letter-spacing:-.8px}.brand-dot{font-style:normal;color:var(--red);font-size:1.55em;line-height:0;margin-left:1px;text-shadow:0 0 14px #ff405788}
+.r-emblem{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;position:relative;color:var(--green);border:1px solid #426b48;border-radius:13px;background:linear-gradient(145deg,#14251a,#090e0b);box-shadow:0 0 18px #9cff5718,inset 0 0 12px #9cff570d;transition:transform .2s ease,box-shadow .2s ease}
+.r-emblem:before{content:"";position:absolute;inset:4px;border:1px solid #9cff5738;border-radius:9px;transform:rotate(45deg)}
+.r-emblem:after{content:"";position:absolute;width:13px;height:2px;right:5px;top:7px;background:var(--red);border-radius:2px;box-shadow:0 0 8px #ff4057}
+.r-emblem span{position:relative;z-index:1;font:900 27px/1 ui-sans-serif,system-ui,Arial,sans-serif;letter-spacing:-2px;text-shadow:0 0 12px #9cff5766;transform:skew(-5deg)}
+.r-emblem:hover{transform:translateY(-2px) rotate(-3deg);box-shadow:0 0 24px #9cff5735,inset 0 0 14px #9cff5718}
+.links{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--green)}.menu{display:none;background:none;color:var(--green);border:1px solid var(--line);padding:6px 12px;border-radius:10px}.hero{padding:86px 0 65px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);border:1px solid #63303a;background:linear-gradient(90deg,#112016,#251116);padding:6px 13px;border-radius:99px;font-size:.85rem}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.13;margin:20px 0}h1 em{font-style:normal;color:var(--green);text-shadow:0 0 28px #9cff5738}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;border-radius:12px;border:1px solid var(--line);font-weight:750;cursor:pointer;transition:.2s}.primary{background:var(--green);color:#071006;border-color:var(--green)}.primary:hover{transform:translateY(-2px);box-shadow:var(--glow)}.secondary:hover{border-color:var(--green);color:var(--green)}.terminal{background:linear-gradient(145deg,#1a1719,#080d0a);border:1px solid #59303a;border-radius:22px;padding:22px;box-shadow:var(--glow),0 0 30px #ff405710;direction:ltr;text-align:left;transform:rotate(1deg)}.termhead{display:flex;gap:7px;border-bottom:1px solid #25372a;padding-bottom:14px;margin-bottom:18px}.termhead i{width:9px;height:9px;border-radius:50%;background:#48634d}.termhead i:first-child{background:#ff6b65}.termhead i:nth-child(2){background:#f6c65c}.termhead i:nth-child(3){background:#75d88b}.code{font: .9rem/2 ui-monospace,monospace;color:#b6c9b9}.code b{color:var(--green);font-weight:500}.code .dim{color:#718578}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px auto 65px}.stat{padding:17px;border:1px solid var(--line);border-radius:15px;background:#0c120e;text-align:center}.stat strong{display:block;color:var(--green);font-size:1.25rem}.stat span{font-size:.85rem;color:var(--muted)}section{padding:56px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.kicker{color:var(--red2);font-size:.85rem;font-weight:800}.section-head h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:4px 0}.section-head p{color:var(--muted);margin:0;max-width:520px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#111a14,#0a100d);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#6a9b53;box-shadow:var(--glow)}.icon{width:45px;height:45px;border-radius:13px;display:grid;place-items:center;background:#1a2b1b;color:var(--green);font-size:1.35rem;margin-bottom:14px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted);font-size:.94rem}.tag{display:inline-block;margin-top:15px;color:var(--red2);font-size:.8rem;border:1px solid #63303a;padding:3px 9px;border-radius:99px}.searchrow{display:flex;gap:12px;align-items:center;margin:18px 0 22px}.searchrow input{width:100%;background:#0c120e;border:1px solid var(--line);border-radius:12px;color:white;padding:12px 15px;outline:none}.searchrow input:focus{border-color:var(--green)}.path{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:step}.step{border:1px solid var(--line);background:#0d1410;border-radius:15px;padding:18px;position:relative}.step:before{counter-increment:step;content:"0" counter(step);color:var(--green);font-weight:900;font-size:1.3rem}.step h3{margin:6px 0}.step p{margin:0;color:var(--muted);font-size:.9rem}.lab{border:1px solid #36513b;background:linear-gradient(110deg,#112016,#0b110d);border-radius:20px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:20px}.lab p{color:var(--muted);margin:5px 0 0}.notice{color:#b8c8bc;font-size:.86rem;margin-top:13px}.quiz{max-width:720px}.quizbox{background:#0d1410;border:1px solid var(--line);border-radius:18px;padding:22px}.options{display:grid;gap:9px;margin-top:15px}.option{background:#111b14;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:10px 13px;text-align:right;cursor:pointer}.option:hover{border-color:var(--green)}.feedback{min-height:28px;color:var(--green);margin-top:12px}.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.aboutbox{border:1px solid var(--line);background:#0c120e;padding:24px;border-radius:18px}.aboutbox p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.green{color:var(--green)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px}.terminal{max-width:520px}.grid{grid-template-columns:repeat(2,1fr)}.path{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:71px;right:4%;left:4%;background:#0c120e;border:1px solid var(--line);border-radius:13px;padding:15px;flex-direction:column;gap:10px}.lab{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.stats{gap:7px}.stat{padding:12px 5px}.stat span{font-size:.76rem}.section-head{display:block}.path{grid-template-columns:1fr 1fr}.hero{gap:28px}.terminal{padding:16px}.lab{padding:20px}}
 
-/* Original Vairous7x intro loading screen */
-#site-loader{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#360914 0,#0b080b 48%,#030304 100%);opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}
+/* Vairous7x intro loader */
+#site-loader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#14291b 0,#080d0a 48%,#050706 100%);opacity:1;visibility:visible;transition:opacity .55s ease,visibility .55s ease}
 #site-loader.done{opacity:0;visibility:hidden;pointer-events:none}
-.loader-card{width:min(370px,86vw);text-align:center;padding:30px 24px;border:1px solid #70202b;border-radius:18px;background:#0b090bf0;box-shadow:0 0 55px #ff17351c}
-.loader-brand{font-family:Orbitron,Arial,sans-serif;font-size:clamp(1.8rem,9vw,2.6rem);font-weight:900;letter-spacing:1.2px;color:#f5f3f4;direction:ltr;text-shadow:0 0 22px #ff17354a}
-.loader-brand span{color:#ff233b}
-.loader-sub{color:#c2b8bc;font-size:1rem;margin:9px 0 22px}
-.loader-track{height:7px;border-radius:20px;background:#291016;overflow:hidden;direction:ltr}
-#loader-progress{height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,#a80920,#ff263f);box-shadow:0 0 15px #ff1735;transition:width .12s ease}
-.loader-meta{display:flex;justify-content:space-between;gap:10px;margin-top:11px;color:#b8aeb2;font-size:.82rem}
-#loader-percent{color:#ff4057;font-variant-numeric:tabular-nums}
-.loader-pulse{width:8px;height:8px;border-radius:50%;display:inline-block;background:#ff233b;margin-right:7px;box-shadow:0 0 12px #ff233b;animation:loaderPulse 1s infinite alternate}
+.loader-card{width:min(360px,84vw);text-align:center;padding:30px 24px;border:1px solid #294432;border-radius:22px;background:#0a100deF;box-shadow:0 0 55px #8cff5715}
+.loader-brand-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;direction:ltr;padding:12px 15px;margin:0 auto 4px;border:1px solid #47724b;border-radius:13px;background:linear-gradient(135deg,#13251aee,#080d0aee);box-shadow:0 0 24px #9cff5720,inset 0 0 16px #9cff5709}
+.loader-brand-wrap:before,.loader-brand-wrap:after{content:"";position:absolute;width:13px;height:13px;border-color:var(--red);border-style:solid}
+.loader-brand-wrap:before{top:-3px;left:-3px;border-width:2px 0 0 2px}
+.loader-brand-wrap:after{bottom:-3px;right:-3px;border-width:0 2px 2px 0}
+.loader-brand-mark{width:31px;height:31px;flex:0 0 31px;filter:drop-shadow(0 0 7px #9cff5760)}
+.loader-brand{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:clamp(1.65rem,7.5vw,2.35rem);font-weight:950;letter-spacing:1.2px;color:var(--green);direction:ltr;line-height:1;text-shadow:0 0 9px #9cff5780,0 0 24px #9cff5738}
+.loader-brand span{color:var(--red);text-shadow:0 0 12px #ff4057aa}
+.loader-sub{color:var(--muted);font-size:.9rem;margin:5px 0 24px}
+.loader-track{height:7px;border-radius:20px;background:#1b2a20;overflow:hidden;direction:ltr}
+#loader-progress{height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,var(--green2),var(--green));box-shadow:0 0 15px #9cff57;transition:width .18s ease}
+.loader-meta{display:flex;justify-content:space-between;gap:10px;margin-top:11px;color:var(--muted);font-size:.78rem}
+#loader-percent{color:var(--green);font-variant-numeric:tabular-nums}
+.loader-pulse{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--green);margin-left:7px;box-shadow:0 0 12px var(--green);animation:loaderPulse 1s infinite alternate}
 @keyframes loaderPulse{to{opacity:.3;transform:scale(.7)}}
 body.site-loading{overflow:hidden}
-body.site-loading .site>header,body.site-loading .site>main{opacity:0}
-body.site-ready .site>header,body.site-ready .site>main{opacity:1;transition:opacity .45s ease}
-@media(prefers-reduced-motion:reduce){#site-loader,#loader-progress,body.site-ready .site>header,body.site-ready .site>main{transition:none}.loader-pulse{animation:none}}
+body.site-loading main,body.site-loading footer,body.site-loading .nav{opacity:0}
+body.site-ready main,body.site-ready footer,body.site-ready .nav{opacity:1;transition:opacity .45s ease}
+body.site-loading .reveal-in{opacity:0;transform:translateY(16px)}
+body.site-ready .reveal-in{animation:revealIn .65s ease both}
+@keyframes revealIn{to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){#site-loader,#loader-progress,body.site-ready main,body.site-ready footer,body.site-ready .nav{transition:none}.loader-pulse{animation:none}.reveal-in{animation:none!important;opacity:1!important;transform:none!important}}
 
+
+/* Smooth reveal while scrolling */
+.scroll-reveal{opacity:0;transform:translateY(30px) scale(.97);filter:blur(3px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1),filter .7s ease;transition-delay:var(--scroll-delay,0ms);will-change:opacity,transform}
+.scroll-reveal.is-visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;filter:none;transition:none}}
+
+/* Staggered content entrance */
+.reveal-item{opacity:0;transform:translateY(10px);animation:itemReveal .38s cubic-bezier(.2,.7,.25,1) both;animation-delay:var(--item-delay,0ms)}
+@keyframes itemReveal{to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.reveal-item{animation:none!important;opacity:1!important;transform:none!important}}
+
+
+.welcome-line{color:var(--green);font-weight:800;font-size:1.08rem;margin:13px 0 4px;text-shadow:0 0 18px #9cff5720}
+#site-loader .loader-sub:first-of-type{font-weight:800;color:var(--green);font-size:1rem;margin:12px 0 8px}
+
+.hero-photo{width:100%;max-width:430px;margin-inline:auto;overflow:hidden;border:1px solid #59303a;border-radius:22px;background:#080d0a;box-shadow:0 0 35px #8cff5720,0 0 30px #ff405710;transform:rotate(1deg)}.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;border-radius:inherit}@media(max-width:800px){.hero-photo{max-width:520px;transform:none}}
 </style>
 </head>
+
 <body class="site-loading">
-<div id="site-loader" role="status" aria-live="polite" aria-label="Loading Vairous7x">
+<div id="site-loader" role="status" aria-live="polite" aria-label="جارٍ تحميل الموقع">
   <div class="loader-card">
-    <div class="loader-brand">Vairous<span>7x</span></div>
-    <p class="loader-sub">أهلاً بك في Vairous7x<br><span class="loader-pulse"></span>جارٍ تجهيز الموقع...</p>
+    <div class="loader-brand-wrap">
+      <svg class="loader-brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 3.5 42 10v13.2c0 10.2-7.1 17.2-18 21.3C13.1 40.4 6 33.4 6 23.2V10L24 3.5Z" fill="#101a13" stroke="#9cff57" stroke-width="1.8"/>
+        <path d="m14 14 7 20h6l7-20h-6l-4 12-4-12h-6Z" fill="#9cff57"/>
+        <path d="m34 11 3-3" stroke="#ff4057" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <div class="loader-brand">Vairous7x<span>.</span></div>
+    </div>
+    <p class="loader-sub">أهلاً بك في موقع فيروس سفن اكس</p><p class="loader-sub"><span class="loader-pulse"></span> جارٍ تجهيز منصتك التعليمية...</p>
     <div class="loader-track"><div id="loader-progress"></div></div>
     <div class="loader-meta"><span id="loader-status">تهيئة الواجهة</span><span id="loader-percent">0%</span></div>
   </div>
 </div>
-<div class="site">
-<header>
-<a class="brand" href="#home" aria-label="Vairous7x home">
-<span class="brand-mark"><svg viewBox="0 0 70 65" aria-hidden="true"><path d="M23 5 L35 0 L47 5 L43 12 L27 12Z" fill="#d6b56a" stroke="#fff0b4"/><path d="M17 13 L35 20 L53 13 L63 20 L42 59 L35 65 L28 59 L7 20Z" fill="#08090b" stroke="#f21b30" stroke-width="3"/><path d="M18 22 L35 31 L52 22 L38 53 L35 57 L32 53Z" fill="none" stroke="#ff172d" stroke-width="3"/><path d="M26 24 L35 30 L44 24" fill="none" stroke="#ff6a76" stroke-width="2"/></svg></span>
-<span class="brand-name">Vairous<span>7x</span></span></a>
-<button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-<nav id="nav"><a class="active" href="#home"><span class="nav-icon">⌂</span>Home</a><a href="#blog"><span class="nav-icon">▤</span>Blog</a><a href="#tools"><span class="nav-icon">⚒</span>Tools</a><a href="#about"><span class="nav-icon">♟</span>About</a><a href="#contact"><span class="nav-icon">◉</span>Contact</a><a class="search" href="#tools" aria-label="Search">⌕</a><a class="nav-join" href="#join">♟ Join Us</a></nav>
-</header>
+
+<header class="nav"><div class="wrap navin"><a class="brand" href="#home" aria-label="Vairous7x - الصفحة الرئيسية">
+  <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="شعار Vairous7x">
+    <path d="M24 3.5 42 10v13.2c0 10.2-7.1 17.2-18 21.3C13.1 40.4 6 33.4 6 23.2V10L24 3.5Z" fill="#101a13" stroke="currentColor" stroke-width="1.8"/>
+    <path d="m15 15 6.1 18h5.8L33 15h-5.4l-3.6 11.4L20.4 15H15Z" fill="currentColor"/>
+    <path d="M34.5 12.5 37 10m-2.5 28 2.5 2" stroke="#ff4057" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="24" cy="7.8" r="1.6" fill="#ff4057"/>
+  </svg>
+  <span class="brand-word">Vairous<span class="brand-x">7x</span><i class="brand-dot">.</i></span>
+</a><button class="menu" id="menu" aria-label="فتح القائمة">القائمة ☰</button><nav class="links" id="links"><a href="#tracks">المسارات</a><a href="#roadmap">خطة التعلم</a><a href="#lab">المختبر</a><a href="#quiz">اختبر نفسك</a><a href="#about">عن المنصة</a></nav><a class="r-emblem" href="#home" aria-label="R logo"><span>R</span></a></div></header>
 <main>
-<section class="hero" id="home">
-<svg class="hero-art" viewBox="0 0 1180 318" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Red neon cyber hacker background">
-<defs>
-<radialGradient id="redmist"><stop stop-color="#a20b27" stop-opacity=".8"/><stop offset="1" stop-color="#16060d" stop-opacity="0"/></radialGradient>
-<linearGradient id="hoodcloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#29232a"/><stop offset=".45" stop-color="#07070a"/><stop offset="1" stop-color="#260911"/></linearGradient>
-<radialGradient id="mask"><stop stop-color="#16070c"/><stop offset="1" stop-color="#010102"/></radialGradient>
-<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<filter id="smoke"><feGaussianBlur stdDeviation="15"/></filter>
-</defs>
-<rect width="1180" height="318" fill="#08090d"/>
-<ellipse cx="930" cy="180" rx="300" ry="190" fill="url(#redmist)"/>
-<ellipse cx="95" cy="210" rx="200" ry="180" fill="#071a28" opacity=".7"/>
-<!-- world map silhouette -->
-<g fill="#1b222c" opacity=".52"><path d="M90 55l55-25 44 15 19 31-28 22-7 35-35 7-20 40-35-18-19-46 13-31zM235 167l31-20 35 13 12 35-18 43-20 36-26-15-8-48zM425 50l44-24 66 13 26 31-20 30-51 7-21 35-35-17-27-36zM500 160l43-21 48 19 13 46-25 55-35-10-23-44zM630 70l70-32 64 19 23 37-38 23-52-10-26 25-34-24z</path></g>
-<!-- circuit board left -->
-<g fill="none" stroke="#173044" stroke-width="2" opacity=".8"><path d="M0 30h145l25 25h90M0 55h100l28 28h100M0 83h65l32 32h105M0 115h48l25 25h102M0 160h120l20 20h90M0 190h80l35 35h130M0 230h50l25 25h120M35 0v38l30 22v36M88 0v25l26 26M145 0v42l22 22v39M205 0v32l-24 24v40" /><g fill="#1b5068"><circle cx="145" cy="30" r="3"/><circle cx="100" cy="55" r="3"/><circle cx="65" cy="83" r="3"/><circle cx="120" cy="160" r="3"/><circle cx="80" cy="190" r="3"/></g></g>
-<!-- red smoke wisps -->
-<g fill="none" stroke="#b30b2b" opacity=".48" filter="url(#smoke)" stroke-width="22"><path d="M730 310Q790 240 750 185T820 85M1020 310Q1080 245 1035 205T1110 100M850 300Q900 260 875 210T950 120"/></g>
-<!-- concentric targeting rings -->
-<g fill="none" stroke="#ff1835" opacity=".6" filter="url(#glow)"><circle cx="865" cy="164" r="105" stroke-width="1.5"/><circle cx="865" cy="164" r="126" stroke-width="1" stroke-dasharray="3 8"/><circle cx="865" cy="164" r="143" stroke-width="1" stroke-dasharray="22 10"/><path d="M865 13v42M865 273v34M713 164h40M978 164h52" stroke-width="2"/></g>
-<!-- hooded figure -->
-<g>
-<path d="M675 318Q684 258 733 239L776 218 945 218 1000 250Q1053 271 1080 318Z" fill="url(#hoodcloth)" stroke="#5b101e" stroke-width="3"/>
-<path d="M743 318Q754 270 796 244L865 267 935 244Q980 277 989 318" fill="#08080b" stroke="#681021" stroke-width="2"/>
-<path d="M750 238Q717 155 752 79Q785 9 865 0Q948 9 979 79Q1013 157 980 238L930 276Q912 226 865 219Q817 226 800 276Z" fill="url(#hoodcloth)" stroke="#a20d27" stroke-width="4" filter="url(#glow)"/>
-<path d="M785 157Q795 55 865 45Q936 55 946 157Q932 216 865 243Q798 216 785 157Z" fill="url(#mask)" stroke="#39101a" stroke-width="2"/>
-<path d="M814 137l30 22M916 137l-30 22" stroke="#ff1b36" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
-<path d="M814 137l31 0M916 137h-31" stroke="#ff1b36" stroke-width="2"/>
-<path d="M825 181Q865 225 905 181M830 183l3 17m12-9 2 19m18-13v19m17-19-2 19m16-36-3 17" fill="none" stroke="#ff1b36" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
-<path d="M755 78Q865 -25 975 78" fill="none" stroke="#f21b37" stroke-width="3" opacity=".8" filter="url(#glow)"/>
-<path d="M760 235l-34 52M970 235l34 52" stroke="#ed1734" stroke-width="3" opacity=".8"/>
-</g>
-<g opacity=".3" stroke="#ff233b" fill="none"><path d="M690 0v318M1045 0v318M0 290h1180" stroke-dasharray="2 8"/></g>
-</svg>
-<div class="hero-copy"><h1>Welcome to</h1><div class="hero-word"><span>Vairous</span>7x</div><p>The Ultimate Hub for Hackers, Learners and Explorers</p><a class="explore" href="#about">Explore Now <span>➜</span></a></div>
-</section>
-<section class="lower" id="about"><div class="section-title"><small>DISCOVER VAIROUS7X</small><h2>ENTER THE WORLD OF CYBER</h2></div><div class="cards"><article class="card"><div class="ico">⌘</div><h3>Cyber Security</h3><p>Learn the foundations of digital security, threats and defense.</p></article><article class="card" id="blog"><div class="ico">▤</div><h3>Blog & Knowledge</h3><p>Explore articles, discoveries and technology explained simply.</p></article><article class="card" id="tools"><div class="ico">⚒</div><h3>Tools & Labs</h3><p>Practice responsibly with useful tools and safe learning labs.</p></article></div></section>
-<section class="lower" id="join"><div class="cta"><h2>READY TO EXPLORE?</h2><p>Learn. Explore. Build your skills with Vairous7x.</p><a class="explore" href="#contact">Join the community ➜</a></div></section>
-<footer class="footer" id="contact">© 2026 <b>VAIROUS7X</b> — LEARN • EXPLORE • HACK</footer>
-</main></div>
+<div class="wrap">
+<section class="hero" id="home"><div><span class="eyebrow"><span class="dot"></span> تعلّم • جرّب • احمِ</span><p class="welcome-line">أهلاً بك في موقع فيروس سفن اكس</p><h1>ابدأ رحلتك في عالم <em>الأمن السيبراني</em></h1><p class="lead">منصة Vairous7x العربية للتعلّم العملي. افهم الشبكات، أتقن أساسيات البرمجة، وتعلّم كيف تكتشف الثغرات وتؤمّن الأنظمة — بمسؤولية وداخل بيئات تدريب مصرح بها.</p><div class="actions"><a class="btn primary" href="#tracks">استكشف المسارات ←</a><a class="btn secondary" href="#roadmap">شوف خطة التعلم</a></div></div><div class="hero-photo"><img src="D8773EBD-400E-4443-84B0-239D7AEE1D30.jpeg" alt="صورة Vairous7x الرئيسية" fetchpriority="high"></div></section>
+<div class="stats"><div class="stat"><strong>من الصفر</strong><span>مسارات متدرجة</span></div><div class="stat"><strong>عملي</strong><span>تطبيق ومراجعة</span></div><div class="stat"><strong>بالعربي</strong><span>شرح واضح ومباشر</span></div></div>
+<section id="tracks"><div class="section-head"><div><span class="kicker">LEARNING TRACKS</span><h2>اختار مسارك وابدأ</h2></div><p>ابدأ بالأساسيات، وبعدها اتخصص في المجال اللي يناسبك. ابحث عن أي مسار بالاسم.</p></div><div class="searchrow"><input id="search" type="search" placeholder="ابحث عن مسار... مثل الشبكات أو Linux" aria-label="ابحث عن مسار"></div><div class="grid" id="cards">
+<article class="card" data-terms="الشبكات network tcp ip dns osi"><div class="icon">⌁</div><h3>أساسيات الشبكات</h3><p>افهم IP وDNS وTCP/UDP ونموذج OSI وطريقة انتقال البيانات بين الأجهزة.</p><span class="tag">مبتدئ</span></article>
+<article class="card" data-terms="حماية wifi واي فاي network security"><div class="icon">◉</div><h3>حماية الشبكات وWi-Fi</h3><p>تعرّف على WPA2/WPA3 وتأمين الراوتر وكلمات المرور ومخاطر الشبكات المفتوحة.</p><span class="tag">مبتدئ ← متوسط</span></article>
+<article class="card" data-terms="linux kali لينكس terminal"><div class="icon">⌘</div><h3>Linux وKali Linux</h3><p>تعلّم سطر الأوامر وإدارة الملفات والصلاحيات وأدوات الفحص داخل مختبرك.</p><span class="tag">مبتدئ</span></article>
+<article class="card" data-terms="cybersecurity امن سيبراني security"><div class="icon">⬡</div><h3>مدخل للأمن السيبراني</h3><p>افهم السرية والسلامة والتوافر، وأنواع التهديدات وأساليب الدفاع والاستجابة.</p><span class="tag">مبتدئ</span></article>
+<article class="card" data-terms="ethical hacking اختراق اخلاقي penetration testing"><div class="icon">⌖</div><h3>الاختبار الأخلاقي</h3><p>تعلّم منهجية اختبار الاختراق والتوثيق وكتابة التقارير ضمن نطاق تملك تصريحًا به.</p><span class="tag">متوسط</span></article>
+<article class="card" data-terms="html css javascript web development برمجة"><div class="icon">〈/〉</div><h3>برمجة الويب</h3><p>ابدأ بـ HTML وCSS وJavaScript لبناء صفحات ويب وفهم طريقة عمل التطبيقات.</p><span class="tag">مبتدئ</span></article>
+<article class="card" data-terms="sql injection قواعد بيانات web security"><div class="icon">▤</div><h3>أمن قواعد البيانات وSQL</h3><p>افهم استعلامات SQL ومخاطر الحقن وطرق الوقاية مثل الاستعلامات المعلّمة.</p><span class="tag">متوسط</span></article>
+<article class="card" data-terms="web security حماية المواقع"><div class="icon">◎</div><h3>حماية تطبيقات الويب</h3><p>تعرّف على الجلسات والمصادقة والتحقق من المدخلات وأشهر أخطاء تطبيقات الويب.</p><span class="tag">متوسط</span></article>
+<article class="card" data-terms="digital safety privacy خصوصية"><div class="icon">◇</div><h3>الخصوصية والأمان الرقمي</h3><p>احمِ حساباتك وأجهزتك باستخدام المصادقة متعددة العوامل والنسخ الاحتياطي.</p><span class="tag">مبتدئ</span></article>
+</div><p id="empty" class="notice" hidden>مفيش مسار مطابق لبحثك. جرّب كلمة تانية.</p></section>
+<section id="roadmap"><div class="section-head"><div><span class="kicker">YOUR ROADMAP</span><h2>خطة تعلم مقترحة</h2></div><p>امشِ بالترتيب ده عشان تبني أساس قوي قبل الدخول في المواضيع المتقدمة.</p></div><div class="path"><div class="step"><h3>الأساسيات</h3><p>مفاهيم الأمن السيبراني، أنظمة التشغيل، ومبادئ الإنترنت.</p></div><div class="step"><h3>الشبكات وLinux</h3><p>IP وDNS والمنافذ وسطر أوامر Linux.</p></div><div class="step"><h3>الويب والبرمجة</h3><p>HTML وJavaScript وSQL ومبادئ حماية التطبيقات.</p></div><div class="step"><h3>تطبيق آمن</h3><p>مختبر محلي، تحليل النتائج، وكتابة تقرير واضح.</p></div></div></section>
+<section id="lab"><div class="lab"><div><span class="kicker">SAFE PRACTICE</span><h2 style="margin:5px 0">اتدرّب في بيئة آمنة</h2><p>التطبيق العملي مهم — استخدم أجهزة افتراضية أو منصات تدريب مصممة للتجربة، ولا تفحص شبكة أو موقعًا لا تملكه أو لا تملك تصريحًا واضحًا لاختباره.</p></div><a class="btn primary" href="#quiz">ابدأ بمراجعة سريعة</a></div><p class="notice">ملاحظة: هذه النسخة التعليمية لا تنفّذ فحصًا حقيقيًا للشبكات ولا تتصل بأي هدف خارجي.</p></section>
+<section id="quiz"><div class="section-head"><div><span class="kicker">QUICK CHECK</span><h2>اختبر معلوماتك</h2></div><p>سؤال بسيط كبداية. اختار إجابة وشوف النتيجة فورًا.</p></div><div class="quiz"><div class="quizbox"><strong>ما الوظيفة الأساسية لبروتوكول DNS؟</strong><div class="options"><button class="option" data-correct="false">تشفير كل حركة مرور الإنترنت</button><button class="option" data-correct="true">تحويل أسماء النطاقات إلى عناوين IP</button><button class="option" data-correct="false">منع الفيروسات من الوصول للجهاز</button></div><div class="feedback" id="feedback" aria-live="polite"></div></div></div></section>
+<section id="about"><div class="about"><div><span class="kicker">ABOUT Vairous7x</span><h2>المعرفة قوة، والمسؤولية أساسها.</h2><p class="lead">Vairous7x مساحة عربية للتعلم المنظم في الأمن السيبراني والبرمجة. هدفنا تبسيط المفاهيم وتحويلها لمهارات عملية تحترم القانون وخصوصية الآخرين.</p></div><div class="aboutbox"><h3 class="green">مبادئ Vairous7x</h3><p>◈ تعلّم مستمر وبناء أساس علمي.</p><p>◈ ممارسة داخل مختبرات مصرح بها فقط.</p><p>◈ حماية الأنظمة والبيانات بدل الإضرار بها.</p><p>◈ مشاركة المعرفة بأسلوب واضح ومحترم.</p></div></div></section>
+</div></main>
+<footer><div class="wrap foot"><span><b class="green">Vairous7x.</b> منصة عربية للتعلم السيبراني</span><span>© <span id="year"></span> Vairous7x — تعلّم بمسؤولية</span></div></footer>
 
 <script>
-(()=> {
+(function(){
   const bar=document.getElementById('loader-progress');
   const percent=document.getElementById('loader-percent');
   const status=document.getElementById('loader-status');
   const loader=document.getElementById('site-loader');
-  const startedAt=Date.now(), minimumDuration=3000;
-  let loaded=document.readyState==='complete', finished=false;
-  const stages=['تهيئة الواجهة','تجهيز الصفحة الرئيسية','تحميل عناصر الموقع','تقريبًا انتهينا...'];
+  const startedAt=Date.now();
+  const minimumDuration=3000;
+  let loaded=false,finished=false;
+  const stages=['تهيئة الواجهة','تجهيز المسارات التعليمية','تحميل عناصر المنصة','تقريبًا انتهينا...'];
   const ticker=setInterval(()=>{
     if(finished)return;
     const elapsed=Date.now()-startedAt;
@@ -123,23 +140,68 @@ body.site-ready .site>header,body.site-ready .site>main{opacity:1;transition:opa
     bar.style.width=progress+'%';
     percent.textContent=Math.floor(progress)+'%';
     status.textContent=stages[Math.min(3,Math.floor(progress/25))];
-    if(loaded&&elapsed>=minimumDuration)finish();
+    if(loaded && elapsed>=minimumDuration) finish();
   },45);
   function finish(){
-    if(finished||!loaded||Date.now()-startedAt<minimumDuration)return;
+    if(finished || !loaded || Date.now()-startedAt<minimumDuration)return;
     finished=true;clearInterval(ticker);
     bar.style.width='100%';percent.textContent='100%';status.textContent='اكتمل التحميل';
     setTimeout(()=>{
       loader.classList.add('done');
       document.body.classList.remove('site-loading');
       document.body.classList.add('site-ready');
-      setTimeout(()=>loader.remove(),650);
+      document.querySelectorAll('main section,footer .foot').forEach((el,i)=>{
+        el.classList.add('reveal-in');el.style.animationDelay=Math.min(i*55,330)+'ms';
+      });
+      const entranceGroups = [
+        '#home .eyebrow, #home .welcome-line, #home h1, #home .lead, #home .actions, #home .terminal, #home .code > div',
+        '#tracks .section-head > div, #tracks .section-head > p, #tracks .searchrow',
+        '#roadmap .section-head > *, #roadmap .step',
+        '#roadmap .step > *',
+        '#lab .lab > *, #lab .notice',
+        '#quiz .section-head > *, #quiz .quizbox > strong, #quiz .option',
+        '#about .about > *, #about .aboutbox > *',
+        'footer .foot > *'
+      ];
+      entranceGroups.forEach(selector=>{
+        document.querySelectorAll(selector).forEach((el,i)=>{
+          el.classList.add('reveal-item');
+          el.style.setProperty('--item-delay',Math.min(i*48,420)+'ms');
+        });
+      });
+      // Reveal learning cards smoothly as they enter the screen during scrolling.
+      const scrollCards=document.querySelectorAll('#cards .card');
+      if('IntersectionObserver' in window){
+        const cardObserver=new IntersectionObserver((entries,observer)=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+        scrollCards.forEach((card,i)=>{
+          card.classList.add('scroll-reveal');
+          card.style.setProperty('--scroll-delay',(i%3)*90+'ms');
+          cardObserver.observe(card);
+        });
+      }else{
+        scrollCards.forEach(card=>card.classList.add('is-visible'));
+      }
+      setTimeout(()=>loader.remove(),700);
     },250);
   }
   function onLoaded(){loaded=true;finish()}
-  if(!loaded)window.addEventListener('load',onLoaded,{once:true});
-  window.addEventListener('pageshow',e=>{if(e.persisted){loaded=true;finish()}});
+  if(document.readyState==='complete')onLoaded();
+  else window.addEventListener('load',onLoaded,{once:true});
+  window.addEventListener('pageshow',e=>{if(e.persisted)onLoaded()});
 })();
 </script>
 
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');menu.addEventListener('click',()=>links.classList.toggle('open'));links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const search=document.getElementById('search'),cards=[...document.querySelectorAll('#cards .card')],empty=document.getElementById('empty');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const match=(card.innerText+' '+card.dataset.terms).toLowerCase().includes(q);card.hidden=!match;if(match)count++});empty.hidden=count!==0});
+document.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{const feedback=document.getElementById('feedback');feedback.textContent=btn.dataset.correct==='true'?'إجابة صحيحة! DNS يترجم اسم النطاق إلى عنوان IP.':'مش بالضبط. جرّب تاني: DNS بيربط اسم الموقع بعنوان IP.';feedback.style.color=btn.dataset.correct==='true'?'#9cff57':'#ffd27a'}));
+</script>
 </body></html>
