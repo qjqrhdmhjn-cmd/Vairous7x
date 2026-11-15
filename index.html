@@ -3,59 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080808">
-<meta name="description" content="Vairous7x — Learn, Explore, Hack. A cyber security learning hub.">
-<title>Vairous7x | Learn • Explore • Hack</title>
+<meta name="theme-color" content="#050506">
+<meta name="description" content="Vairous7x — The ultimate hub for hackers, learners and explorers.">
+<title>Vairous7x | The Ultimate Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
 <style>
-:root{--red:#ff152b;--red2:#a80016;--bg:#070708;--panel:#101012;--muted:#aaaab2;--line:#ffffff16}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f6f6f7;font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 78% 16%,#6d07152b,transparent 36%),radial-gradient(ellipse at 8% 45%,#111a2b55,transparent 34%),linear-gradient(#080809,#050506)}
-a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
-header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ff20301c;background:#080809e8;backdrop-filter:blur(14px);position:sticky;top:0;z-index:20}
-.brand{display:flex;align-items:center;gap:12px;font:900 25px Orbitron,sans-serif;letter-spacing:-1.5px}.brand-mark{width:43px;height:43px;display:grid;place-items:center;color:white;font:900 29px Orbitron,sans-serif;border:2px solid var(--red);clip-path:polygon(50% 0,100% 25%,88% 100%,12% 100%,0 25%);text-shadow:0 0 12px var(--red);filter:drop-shadow(0 0 8px #f00)}.brand b{color:var(--red)}
-nav{display:flex;align-items:center;gap:28px;color:#ddd;font-size:17px;font-weight:700}nav a{transition:.2s}nav a:hover{color:var(--red)}.nav-cta,.btn{border:1px solid var(--red);padding:10px 19px;border-radius:7px;color:#fff;background:#f10d2014;box-shadow:0 0 18px #ff10201c;transition:.2s;font-weight:700}.nav-cta:hover,.btn:hover{background:var(--red);box-shadow:0 0 28px #ff173b77;transform:translateY(-2px)}
-.menu{display:none;background:none;border:1px solid #ffffff30;color:#fff;border-radius:6px;padding:8px 11px;font-size:20px}
-.hero{min-height:570px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;position:relative;padding:42px 0 55px;isolation:isolate}
-.hero:before{content:"";position:absolute;inset:5% -5% 0;z-index:-1;background:linear-gradient(90deg,#070708 0%,#070708df 42%,transparent 100%),repeating-linear-gradient(0deg,transparent 0 48px,#ff14200a 49px 50px),repeating-linear-gradient(90deg,transparent 0 48px,#ff14200a 49px 50px);mask-image:linear-gradient(90deg,#000,transparent)}
-.eyebrow{color:#ff3446;letter-spacing:4px;font:700 13px Orbitron,sans-serif;text-transform:uppercase}.hero h1{font:900 clamp(42px,6vw,76px)/1.02 Orbitron,sans-serif;letter-spacing:-3px;margin:18px 0 14px}.hero h1 span{color:var(--red);text-shadow:0 0 25px #ff102055}.hero p{font-size:21px;line-height:1.5;color:#c4c4cb;max-width:550px;margin:0 0 28px}.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;font-size:17px}.btn.primary{background:var(--red);border-color:var(--red);box-shadow:0 0 25px #ff102044}.btn.secondary{background:#ffffff08;border-color:#ffffff3b}
-.visual{height:470px;position:relative;display:grid;place-items:center}.visual:before{content:"";position:absolute;width:350px;height:350px;border:1px solid #ff172c88;border-radius:50%;box-shadow:0 0 35px #ff102044,inset 0 0 35px #ff102022}.visual:after{content:"";position:absolute;width:410px;height:410px;border:1px dashed #ff243b55;border-radius:50%;animation:spin 32s linear infinite}
-.hood{width:min(100%,480px);height:470px;position:relative;filter:drop-shadow(0 0 26px #ff10204a)}.hood svg{width:100%;height:100%;overflow:visible}.scan{position:absolute;inset:0;background:linear-gradient(transparent 49%,#ff233b18 50%,transparent 51%);background-size:100% 8px;mix-blend-mode:screen;pointer-events:none}
-@keyframes spin{to{transform:rotate(360deg)}}.stats{display:flex;gap:35px;margin-top:34px}.stat strong{display:block;color:#fff;font:800 23px Orbitron}.stat small{color:#888;font-size:13px;letter-spacing:1px}
-.section{padding:74px 0}.section-head{text-align:center;margin-bottom:34px}.section-head small{color:var(--red);font:700 12px Orbitron;letter-spacing:3px}.section-head h2{font:800 clamp(27px,4vw,40px) Orbitron;margin:12px 0}.section-head p{color:var(--muted);font-size:18px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #ffffff16;background:linear-gradient(145deg,#151518,#0b0b0d);padding:25px;border-radius:13px;min-height:185px;transition:.25s;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:#ff10201a;filter:blur(38px);right:-45px;top:-50px}.card:hover{border-color:#ff203077;transform:translateY(-5px);box-shadow:0 12px 35px #0008}.card .ico{font-size:28px;color:var(--red)}.card h3{font:700 21px Orbitron;margin:14px 0 8px}.card p{color:#a9a9b0;font-size:17px;line-height:1.5;margin:0}
-.cta{border:1px solid #ff243b55;border-radius:16px;padding:35px;text-align:center;background:radial-gradient(ellipse at 50% 0,#ff14201e,transparent 65%),#101012}.cta h2{font:800 clamp(24px,4vw,36px) Orbitron;margin:0 0 12px}.cta p{color:#aaa;font-size:18px;margin:0 0 22px}
-footer{border-top:1px solid var(--line);padding:25px 0;color:#85858d;text-align:center;font-size:15px}footer b{color:var(--red);font-family:Orbitron}
-@media(max-width:800px){header{height:70px}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#0a0a0c;padding:20px;flex-direction:column;gap:18px;border-bottom:1px solid #ff203044}nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:55px 0 35px;text-align:center}.hero p{margin-left:auto;margin-right:auto}.actions,.stats{justify-content:center}.visual{height:360px;grid-row:1}.hood{height:360px}.visual:before{width:270px;height:270px}.visual:after{width:320px;height:320px}.cards{grid-template-columns:1fr}.section{padding:55px 0}.hero h1{letter-spacing:-2px}}
-@media(max-width:430px){.brand{font-size:20px}.brand-mark{width:37px;height:37px}.visual{height:310px}.hood{height:310px}.visual:before{width:230px;height:230px}.visual:after{width:275px;height:275px}.hero h1{font-size:39px}.stats{gap:20px}.stat strong{font-size:19px}}
+:root{--red:#ff172d;--red-dark:#8d0717;--black:#050506;--white:#f5f3f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050506;color:var(--white);font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+.site{width:min(1180px,100%);margin:0 auto;background:#050506;min-height:100vh;box-shadow:0 0 55px #000}
+header{height:70px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,#111114,#070708);border-bottom:1px solid #ffffff24;position:relative;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;min-width:230px}.brand-mark{width:55px;height:54px;position:relative;display:grid;place-items:center}.brand-mark svg{width:100%;height:100%;filter:drop-shadow(0 0 7px #f10)}.brand-name{font:italic 900 30px 'Permanent Marker',cursive;letter-spacing:-1.8px;text-shadow:0 2px 5px #000}.brand-name span{color:#f21b30}
+nav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700;color:#e5e2e4}nav a{display:flex;align-items:center;gap:7px;white-space:nowrap;transition:.2s}nav a:hover,nav a.active{color:var(--red)}nav a.active{border-bottom:2px solid var(--red);padding:24px 0 20px}.nav-join{border:1px solid var(--red);border-radius:7px;padding:8px 13px;color:#ff3347;box-shadow:0 0 12px #ff15252b}.nav-join:hover{background:#e20e24;color:white}.nav-icon{font-size:18px;line-height:1}.search{font-size:24px}.menu{display:none;border:1px solid #ffffff44;background:#111;color:white;border-radius:5px;padding:8px 11px}
+.hero{height:318px;position:relative;isolation:isolate;overflow:hidden;background:#08090d}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#07080c 0%,#07080ce8 27%,#07080c50 56%,#0505071c 100%)}
+.hero-copy{position:absolute;left:22%;top:50%;transform:translateY(-50%);width:48%;z-index:2}
+.hero-copy h1{font:900 clamp(34px,4vw,48px)/1.05 Arial,sans-serif;margin:0 0 1px;letter-spacing:-1.5px;color:#f6f5f5;text-shadow:0 3px 8px #000}
+.hero-word{font:italic 900 clamp(52px,6vw,76px)/.98 'Permanent Marker',cursive;letter-spacing:-3px;margin:0 0 7px;color:#fff;text-shadow:0 3px 2px #000,0 0 18px #f000}.hero-word span{color:#f51b32}
+.hero-copy p{font-size:18px;font-weight:700;margin:0 0 22px;color:#f1edef;text-shadow:0 2px 5px #000}
+.explore{display:inline-flex;align-items:center;gap:12px;padding:9px 22px;border:1.5px solid #ff2338;border-radius:7px;color:#ff3348;font-size:17px;font-weight:700;background:#08080bd9;box-shadow:0 0 12px #f00a;transition:.2s}.explore:hover{background:#e90d26;color:#fff;box-shadow:0 0 22px #ff173d88}
+.lower{padding:54px 28px;background:#08080a}.section-title{text-align:center;margin:0 0 28px}.section-title small{font:700 11px Orbitron;color:#f3263c;letter-spacing:3px}.section-title h2{font:800 29px Orbitron;margin:9px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#151518,#09090b);border:1px solid #ffffff1b;border-radius:9px;padding:23px;min-height:155px}.card .ico{color:#ff233a;font-size:25px}.card h3{font:700 17px Orbitron;margin:12px 0 8px}.card p{color:#b5b2b5;font-size:16px;line-height:1.45;margin:0}.cta{text-align:center;border:1px solid #ff23384a;background:radial-gradient(ellipse at top,#64101b55,transparent 70%),#111;padding:30px;border-radius:10px}.cta h2{font:800 25px Orbitron;margin:0 0 10px}.cta p{color:#bbb;font-size:17px}.footer{padding:20px;text-align:center;border-top:1px solid #ffffff1b;color:#888;font-size:14px}.footer b{color:#f22}
+@media(max-width:850px){header{padding:0 18px}.brand{min-width:0}.brand-name{font-size:25px}nav{gap:13px;font-size:14px}.hero-copy{left:15%;width:58%}}
+@media(max-width:650px){header{height:66px}.brand-mark{width:46px;height:46px}.brand-name{font-size:24px}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;padding:18px;background:#09090b;flex-direction:column;align-items:stretch;gap:15px;border-bottom:1px solid #f22}nav.open{display:flex}nav a.active{padding:0;border:0}.nav-join{justify-content:center}.hero{height:430px}.hero-art{width:160%;left:-28%;object-fit:cover}.hero:after{background:linear-gradient(90deg,#07080ceF 0%,#07080cb8 48%,#07080c30 100%),linear-gradient(0deg,#07080c88,transparent 60%)}.hero-copy{left:7%;top:43%;transform:translateY(-50%);width:78%}.hero-copy h1{font-size:35px}.hero-word{font-size:53px}.hero-copy p{font-size:16px;max-width:300px}.lower{padding:42px 18px}.cards{grid-template-columns:1fr}.section-title h2{font-size:24px}}
 </style>
 </head>
-<body>
-<header><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:92%">
-<a class="brand" href="#home"><span class="brand-mark">V</span><span>VAIROUS<b>7X</b></span></a>
-<nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#learn">Learn</a><a href="#tools">Tools</a><a href="#contact">Contact</a><a class="nav-cta" href="#learn">Join Us ↗</a></nav><button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-</div></header>
+<body><div class="site">
+<header>
+<a class="brand" href="#home" aria-label="Vairous7x home">
+<span class="brand-mark"><svg viewBox="0 0 70 65" aria-hidden="true"><path d="M23 5 L35 0 L47 5 L43 12 L27 12Z" fill="#d6b56a" stroke="#fff0b4"/><path d="M17 13 L35 20 L53 13 L63 20 L42 59 L35 65 L28 59 L7 20Z" fill="#08090b" stroke="#f21b30" stroke-width="3"/><path d="M18 22 L35 31 L52 22 L38 53 L35 57 L32 53Z" fill="none" stroke="#ff172d" stroke-width="3"/><path d="M26 24 L35 30 L44 24" fill="none" stroke="#ff6a76" stroke-width="2"/></svg></span>
+<span class="brand-name">Vairous<span>7x</span></span></a>
+<button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+<nav id="nav"><a class="active" href="#home"><span class="nav-icon">⌂</span>Home</a><a href="#blog"><span class="nav-icon">▤</span>Blog</a><a href="#tools"><span class="nav-icon">⚒</span>Tools</a><a href="#about"><span class="nav-icon">♟</span>About</a><a href="#contact"><span class="nav-icon">◉</span>Contact</a><a class="search" href="#tools" aria-label="Search">⌕</a><a class="nav-join" href="#join">♟ Join Us</a></nav>
+</header>
 <main>
-<section class="wrap hero" id="home">
-<div><div class="eyebrow">LEARN • EXPLORE • HACK</div><h1>WELCOME TO<br><span>VAIROUS</span>7X</h1><p>The ultimate hub for hackers, learners and explorers. Discover the world of cyber security, sharpen your skills and explore technology.</p><div class="actions"><a class="btn primary" href="#learn">Explore Now <span>→</span></a><a class="btn secondary" href="#about">Discover More</a></div><div class="stats"><div class="stat"><strong>01</strong><small>LEARN</small></div><div class="stat"><strong>02</strong><small>EXPLORE</small></div><div class="stat"><strong>03</strong><small>BUILD</small></div></div></div>
-<div class="visual"><div class="hood"><svg viewBox="0 0 480 500" role="img" aria-label="Red neon masked hooded cyber figure"><defs><linearGradient id="cloth" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#29292e"/><stop offset=".5" stop-color="#080809"/><stop offset="1" stop-color="#3a1118"/></linearGradient><radialGradient id="face"><stop stop-color="#17070a"/><stop offset="1" stop-color="#020203"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-<path d="M58 500 Q65 385 140 350 L180 320 L300 320 L340 350 Q420 385 430 500Z" fill="url(#cloth)" stroke="#8d1425" stroke-width="3"/>
-<path d="M110 500 Q130 405 178 360 L240 395 L302 360 Q350 405 370 500" fill="#09090b" stroke="#4a111b" stroke-width="3"/>
-<path d="M105 350 Q78 260 95 165 Q113 55 240 24 Q367 55 385 165 Q402 260 375 350 L322 398 Q300 335 240 330 Q180 335 158 398Z" fill="url(#cloth)" stroke="#b3182d" stroke-width="5" filter="url(#glow)"/>
-<path d="M125 215 Q145 83 240 68 Q335 83 355 215 Q330 298 240 333 Q150 298 125 215Z" fill="url(#face)" stroke="#3b1018" stroke-width="3"/>
-<path d="M160 205 L211 226 M320 205 L269 226" stroke="#ff1c36" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
-<path d="M160 205 L210 205 M320 205 L270 205" stroke="#ff1c36" stroke-width="4" filter="url(#glow)"/>
-<path d="M174 270 Q240 322 306 270 M180 270 L180 293 M198 281 L198 303 M218 289 L218 311 M240 293 L240 315 M262 289 L262 311 M282 281 L282 303 M300 270 L300 293" fill="none" stroke="#ff1c36" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
-<path d="M105 350 L68 405 M375 350 L412 405" stroke="#f51c35" stroke-width="5" opacity=".8"/>
-<path d="M145 102 Q240 -5 335 102" fill="none" stroke="#ff263d" stroke-width="4" filter="url(#glow)"/>
-</svg><div class="scan"></div></div></div>
+<section class="hero" id="home">
+<svg class="hero-art" viewBox="0 0 1180 318" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Red neon cyber hacker background">
+<defs>
+<radialGradient id="redmist"><stop stop-color="#a20b27" stop-opacity=".8"/><stop offset="1" stop-color="#16060d" stop-opacity="0"/></radialGradient>
+<linearGradient id="hoodcloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#29232a"/><stop offset=".45" stop-color="#07070a"/><stop offset="1" stop-color="#260911"/></linearGradient>
+<radialGradient id="mask"><stop stop-color="#16070c"/><stop offset="1" stop-color="#010102"/></radialGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="smoke"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<rect width="1180" height="318" fill="#08090d"/>
+<ellipse cx="930" cy="180" rx="300" ry="190" fill="url(#redmist)"/>
+<ellipse cx="95" cy="210" rx="200" ry="180" fill="#071a28" opacity=".7"/>
+<!-- world map silhouette -->
+<g fill="#1b222c" opacity=".52"><path d="M90 55l55-25 44 15 19 31-28 22-7 35-35 7-20 40-35-18-19-46 13-31zM235 167l31-20 35 13 12 35-18 43-20 36-26-15-8-48zM425 50l44-24 66 13 26 31-20 30-51 7-21 35-35-17-27-36zM500 160l43-21 48 19 13 46-25 55-35-10-23-44zM630 70l70-32 64 19 23 37-38 23-52-10-26 25-34-24z</path></g>
+<!-- circuit board left -->
+<g fill="none" stroke="#173044" stroke-width="2" opacity=".8"><path d="M0 30h145l25 25h90M0 55h100l28 28h100M0 83h65l32 32h105M0 115h48l25 25h102M0 160h120l20 20h90M0 190h80l35 35h130M0 230h50l25 25h120M35 0v38l30 22v36M88 0v25l26 26M145 0v42l22 22v39M205 0v32l-24 24v40" /><g fill="#1b5068"><circle cx="145" cy="30" r="3"/><circle cx="100" cy="55" r="3"/><circle cx="65" cy="83" r="3"/><circle cx="120" cy="160" r="3"/><circle cx="80" cy="190" r="3"/></g></g>
+<!-- red smoke wisps -->
+<g fill="none" stroke="#b30b2b" opacity=".48" filter="url(#smoke)" stroke-width="22"><path d="M730 310Q790 240 750 185T820 85M1020 310Q1080 245 1035 205T1110 100M850 300Q900 260 875 210T950 120"/></g>
+<!-- concentric targeting rings -->
+<g fill="none" stroke="#ff1835" opacity=".6" filter="url(#glow)"><circle cx="865" cy="164" r="105" stroke-width="1.5"/><circle cx="865" cy="164" r="126" stroke-width="1" stroke-dasharray="3 8"/><circle cx="865" cy="164" r="143" stroke-width="1" stroke-dasharray="22 10"/><path d="M865 13v42M865 273v34M713 164h40M978 164h52" stroke-width="2"/></g>
+<!-- hooded figure -->
+<g>
+<path d="M675 318Q684 258 733 239L776 218 945 218 1000 250Q1053 271 1080 318Z" fill="url(#hoodcloth)" stroke="#5b101e" stroke-width="3"/>
+<path d="M743 318Q754 270 796 244L865 267 935 244Q980 277 989 318" fill="#08080b" stroke="#681021" stroke-width="2"/>
+<path d="M750 238Q717 155 752 79Q785 9 865 0Q948 9 979 79Q1013 157 980 238L930 276Q912 226 865 219Q817 226 800 276Z" fill="url(#hoodcloth)" stroke="#a20d27" stroke-width="4" filter="url(#glow)"/>
+<path d="M785 157Q795 55 865 45Q936 55 946 157Q932 216 865 243Q798 216 785 157Z" fill="url(#mask)" stroke="#39101a" stroke-width="2"/>
+<path d="M814 137l30 22M916 137l-30 22" stroke="#ff1b36" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M814 137l31 0M916 137h-31" stroke="#ff1b36" stroke-width="2"/>
+<path d="M825 181Q865 225 905 181M830 183l3 17m12-9 2 19m18-13v19m17-19-2 19m16-36-3 17" fill="none" stroke="#ff1b36" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M755 78Q865 -25 975 78" fill="none" stroke="#f21b37" stroke-width="3" opacity=".8" filter="url(#glow)"/>
+<path d="M760 235l-34 52M970 235l34 52" stroke="#ed1734" stroke-width="3" opacity=".8"/>
+</g>
+<g opacity=".3" stroke="#ff233b" fill="none"><path d="M690 0v318M1045 0v318M0 290h1180" stroke-dasharray="2 8"/></g>
+</svg>
+<div class="hero-copy"><h1>Welcome to</h1><div class="hero-word"><span>Vairous</span>7x</div><p>The Ultimate Hub for Hackers, Learners and Explorers</p><a class="explore" href="#about">Explore Now <span>➜</span></a></div>
 </section>
-<section class="section" id="about"><div class="wrap"><div class="section-head"><small>WHO WE ARE</small><h2>ENTER THE UNKNOWN</h2><p>A place to learn technology with curiosity, discipline and responsibility.</p></div><div class="cards"><article class="card"><div class="ico">⌘</div><h3>Cyber Security</h3><p>Understand digital security, threats and the principles of defense.</p></article><article class="card"><div class="ico">⌁</div><h3>Explore Technology</h3><p>Discover networks, systems and the ideas shaping the digital world.</p></article><article class="card"><div class="ico">⟠</div><h3>Build Your Skills</h3><p>Practice, experiment in safe labs and keep improving every day.</p></article></div></div></section>
-<section class="section" id="learn"><div class="wrap"><div class="cta"><h2>YOUR JOURNEY STARTS HERE</h2><p>Learn the fundamentals. Explore new ideas. Build something meaningful.</p><a class="btn primary" href="#tools">Start Exploring →</a></div></div></section>
-<section class="section" id="tools"><div class="wrap"><div class="section-head"><small>THE TOOLBOX</small><h2>TOOLS & RESOURCES</h2><p>Useful learning resources and safe practice environments are coming soon.</p></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="section-head"><small>STAY CONNECTED</small><h2>CONTACT VAIROUS7X</h2><p>Follow the journey as the platform grows.</p></div></div></section>
-</main>
-<footer>© 2026 <b>VAIROUS7X</b> — LEARN • EXPLORE • HACK</footer>
+<section class="lower" id="about"><div class="section-title"><small>DISCOVER VAIROUS7X</small><h2>ENTER THE WORLD OF CYBER</h2></div><div class="cards"><article class="card"><div class="ico">⌘</div><h3>Cyber Security</h3><p>Learn the foundations of digital security, threats and defense.</p></article><article class="card" id="blog"><div class="ico">▤</div><h3>Blog & Knowledge</h3><p>Explore articles, discoveries and technology explained simply.</p></article><article class="card" id="tools"><div class="ico">⚒</div><h3>Tools & Labs</h3><p>Practice responsibly with useful tools and safe learning labs.</p></article></div></section>
+<section class="lower" id="join"><div class="cta"><h2>READY TO EXPLORE?</h2><p>Learn. Explore. Build your skills with Vairous7x.</p><a class="explore" href="#contact">Join the community ➜</a></div></section>
+<footer class="footer" id="contact">© 2026 <b>VAIROUS7X</b> — LEARN • EXPLORE • HACK</footer>
+</main></div>
 </body></html>
