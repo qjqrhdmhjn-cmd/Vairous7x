@@ -1,16 +1,61 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080d18">
-<title>Vairous7x — صيانة مؤقتة</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Vairous7x — Learn, Explore, Hack. A cyber security learning hub.">
+<title>Vairous7x | Learn • Explore • Hack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 20%,#12315a 0,transparent 45%),linear-gradient(145deg,#060910,#0b1512);color:#f4f7ff;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}
-main{width:min(620px,100%);padding:48px 28px;border:1px solid #4e9cff55;border-radius:26px;background:#0a1220d9;box-shadow:0 0 60px #1677ff20}
-.logo{width:76px;height:76px;margin:0 auto 26px;display:grid;place-items:center;border:2px solid #9cff57;border-radius:22px;color:#9cff57;font-size:42px;font-weight:900;box-shadow:0 0 28px #9cff5730}
-.tag{color:#9cff57;font-size:14px;letter-spacing:2px}h1{font-size:clamp(30px,7vw,48px);margin:16px 0}p{color:#b7c4d8;line-height:1.9;font-size:17px}.line{height:3px;width:90px;margin:28px auto 0;border-radius:9px;background:linear-gradient(90deg,#4e9cff,#9cff57)}
+:root{--red:#ff152b;--red2:#a80016;--bg:#070708;--panel:#101012;--muted:#aaaab2;--line:#ffffff16}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f6f6f7;font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 78% 16%,#6d07152b,transparent 36%),radial-gradient(ellipse at 8% 45%,#111a2b55,transparent 34%),linear-gradient(#080809,#050506)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ff20301c;background:#080809e8;backdrop-filter:blur(14px);position:sticky;top:0;z-index:20}
+.brand{display:flex;align-items:center;gap:12px;font:900 25px Orbitron,sans-serif;letter-spacing:-1.5px}.brand-mark{width:43px;height:43px;display:grid;place-items:center;color:white;font:900 29px Orbitron,sans-serif;border:2px solid var(--red);clip-path:polygon(50% 0,100% 25%,88% 100%,12% 100%,0 25%);text-shadow:0 0 12px var(--red);filter:drop-shadow(0 0 8px #f00)}.brand b{color:var(--red)}
+nav{display:flex;align-items:center;gap:28px;color:#ddd;font-size:17px;font-weight:700}nav a{transition:.2s}nav a:hover{color:var(--red)}.nav-cta,.btn{border:1px solid var(--red);padding:10px 19px;border-radius:7px;color:#fff;background:#f10d2014;box-shadow:0 0 18px #ff10201c;transition:.2s;font-weight:700}.nav-cta:hover,.btn:hover{background:var(--red);box-shadow:0 0 28px #ff173b77;transform:translateY(-2px)}
+.menu{display:none;background:none;border:1px solid #ffffff30;color:#fff;border-radius:6px;padding:8px 11px;font-size:20px}
+.hero{min-height:570px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;position:relative;padding:42px 0 55px;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:5% -5% 0;z-index:-1;background:linear-gradient(90deg,#070708 0%,#070708df 42%,transparent 100%),repeating-linear-gradient(0deg,transparent 0 48px,#ff14200a 49px 50px),repeating-linear-gradient(90deg,transparent 0 48px,#ff14200a 49px 50px);mask-image:linear-gradient(90deg,#000,transparent)}
+.eyebrow{color:#ff3446;letter-spacing:4px;font:700 13px Orbitron,sans-serif;text-transform:uppercase}.hero h1{font:900 clamp(42px,6vw,76px)/1.02 Orbitron,sans-serif;letter-spacing:-3px;margin:18px 0 14px}.hero h1 span{color:var(--red);text-shadow:0 0 25px #ff102055}.hero p{font-size:21px;line-height:1.5;color:#c4c4cb;max-width:550px;margin:0 0 28px}.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;font-size:17px}.btn.primary{background:var(--red);border-color:var(--red);box-shadow:0 0 25px #ff102044}.btn.secondary{background:#ffffff08;border-color:#ffffff3b}
+.visual{height:470px;position:relative;display:grid;place-items:center}.visual:before{content:"";position:absolute;width:350px;height:350px;border:1px solid #ff172c88;border-radius:50%;box-shadow:0 0 35px #ff102044,inset 0 0 35px #ff102022}.visual:after{content:"";position:absolute;width:410px;height:410px;border:1px dashed #ff243b55;border-radius:50%;animation:spin 32s linear infinite}
+.hood{width:min(100%,480px);height:470px;position:relative;filter:drop-shadow(0 0 26px #ff10204a)}.hood svg{width:100%;height:100%;overflow:visible}.scan{position:absolute;inset:0;background:linear-gradient(transparent 49%,#ff233b18 50%,transparent 51%);background-size:100% 8px;mix-blend-mode:screen;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}.stats{display:flex;gap:35px;margin-top:34px}.stat strong{display:block;color:#fff;font:800 23px Orbitron}.stat small{color:#888;font-size:13px;letter-spacing:1px}
+.section{padding:74px 0}.section-head{text-align:center;margin-bottom:34px}.section-head small{color:var(--red);font:700 12px Orbitron;letter-spacing:3px}.section-head h2{font:800 clamp(27px,4vw,40px) Orbitron;margin:12px 0}.section-head p{color:var(--muted);font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #ffffff16;background:linear-gradient(145deg,#151518,#0b0b0d);padding:25px;border-radius:13px;min-height:185px;transition:.25s;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:#ff10201a;filter:blur(38px);right:-45px;top:-50px}.card:hover{border-color:#ff203077;transform:translateY(-5px);box-shadow:0 12px 35px #0008}.card .ico{font-size:28px;color:var(--red)}.card h3{font:700 21px Orbitron;margin:14px 0 8px}.card p{color:#a9a9b0;font-size:17px;line-height:1.5;margin:0}
+.cta{border:1px solid #ff243b55;border-radius:16px;padding:35px;text-align:center;background:radial-gradient(ellipse at 50% 0,#ff14201e,transparent 65%),#101012}.cta h2{font:800 clamp(24px,4vw,36px) Orbitron;margin:0 0 12px}.cta p{color:#aaa;font-size:18px;margin:0 0 22px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#85858d;text-align:center;font-size:15px}footer b{color:var(--red);font-family:Orbitron}
+@media(max-width:800px){header{height:70px}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#0a0a0c;padding:20px;flex-direction:column;gap:18px;border-bottom:1px solid #ff203044}nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:55px 0 35px;text-align:center}.hero p{margin-left:auto;margin-right:auto}.actions,.stats{justify-content:center}.visual{height:360px;grid-row:1}.hood{height:360px}.visual:before{width:270px;height:270px}.visual:after{width:320px;height:320px}.cards{grid-template-columns:1fr}.section{padding:55px 0}.hero h1{letter-spacing:-2px}}
+@media(max-width:430px){.brand{font-size:20px}.brand-mark{width:37px;height:37px}.visual{height:310px}.hood{height:310px}.visual:before{width:230px;height:230px}.visual:after{width:275px;height:275px}.hero h1{font-size:39px}.stats{gap:20px}.stat strong{font-size:19px}}
 </style>
 </head>
-<body><main><div class="logo">V</div><div class="tag">VAIR0US7X • SYSTEM</div><h1>الموقع تحت الصيانة</h1><p>نعمل حاليًا على بعض التحديثات والتحسينات.<br>سنعود للعمل قريبًا. شكرًا لانتظارك.</p><div class="line"></div></main></body>
-</html>
+<body>
+<header><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:92%">
+<a class="brand" href="#home"><span class="brand-mark">V</span><span>VAIROUS<b>7X</b></span></a>
+<nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#learn">Learn</a><a href="#tools">Tools</a><a href="#contact">Contact</a><a class="nav-cta" href="#learn">Join Us ↗</a></nav><button class="menu" aria-label="Open menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<section class="wrap hero" id="home">
+<div><div class="eyebrow">LEARN • EXPLORE • HACK</div><h1>WELCOME TO<br><span>VAIROUS</span>7X</h1><p>The ultimate hub for hackers, learners and explorers. Discover the world of cyber security, sharpen your skills and explore technology.</p><div class="actions"><a class="btn primary" href="#learn">Explore Now <span>→</span></a><a class="btn secondary" href="#about">Discover More</a></div><div class="stats"><div class="stat"><strong>01</strong><small>LEARN</small></div><div class="stat"><strong>02</strong><small>EXPLORE</small></div><div class="stat"><strong>03</strong><small>BUILD</small></div></div></div>
+<div class="visual"><div class="hood"><svg viewBox="0 0 480 500" role="img" aria-label="Red neon masked hooded cyber figure"><defs><linearGradient id="cloth" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#29292e"/><stop offset=".5" stop-color="#080809"/><stop offset="1" stop-color="#3a1118"/></linearGradient><radialGradient id="face"><stop stop-color="#17070a"/><stop offset="1" stop-color="#020203"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<path d="M58 500 Q65 385 140 350 L180 320 L300 320 L340 350 Q420 385 430 500Z" fill="url(#cloth)" stroke="#8d1425" stroke-width="3"/>
+<path d="M110 500 Q130 405 178 360 L240 395 L302 360 Q350 405 370 500" fill="#09090b" stroke="#4a111b" stroke-width="3"/>
+<path d="M105 350 Q78 260 95 165 Q113 55 240 24 Q367 55 385 165 Q402 260 375 350 L322 398 Q300 335 240 330 Q180 335 158 398Z" fill="url(#cloth)" stroke="#b3182d" stroke-width="5" filter="url(#glow)"/>
+<path d="M125 215 Q145 83 240 68 Q335 83 355 215 Q330 298 240 333 Q150 298 125 215Z" fill="url(#face)" stroke="#3b1018" stroke-width="3"/>
+<path d="M160 205 L211 226 M320 205 L269 226" stroke="#ff1c36" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M160 205 L210 205 M320 205 L270 205" stroke="#ff1c36" stroke-width="4" filter="url(#glow)"/>
+<path d="M174 270 Q240 322 306 270 M180 270 L180 293 M198 281 L198 303 M218 289 L218 311 M240 293 L240 315 M262 289 L262 311 M282 281 L282 303 M300 270 L300 293" fill="none" stroke="#ff1c36" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M105 350 L68 405 M375 350 L412 405" stroke="#f51c35" stroke-width="5" opacity=".8"/>
+<path d="M145 102 Q240 -5 335 102" fill="none" stroke="#ff263d" stroke-width="4" filter="url(#glow)"/>
+</svg><div class="scan"></div></div></div>
+</section>
+<section class="section" id="about"><div class="wrap"><div class="section-head"><small>WHO WE ARE</small><h2>ENTER THE UNKNOWN</h2><p>A place to learn technology with curiosity, discipline and responsibility.</p></div><div class="cards"><article class="card"><div class="ico">⌘</div><h3>Cyber Security</h3><p>Understand digital security, threats and the principles of defense.</p></article><article class="card"><div class="ico">⌁</div><h3>Explore Technology</h3><p>Discover networks, systems and the ideas shaping the digital world.</p></article><article class="card"><div class="ico">⟠</div><h3>Build Your Skills</h3><p>Practice, experiment in safe labs and keep improving every day.</p></article></div></div></section>
+<section class="section" id="learn"><div class="wrap"><div class="cta"><h2>YOUR JOURNEY STARTS HERE</h2><p>Learn the fundamentals. Explore new ideas. Build something meaningful.</p><a class="btn primary" href="#tools">Start Exploring →</a></div></div></section>
+<section class="section" id="tools"><div class="wrap"><div class="section-head"><small>THE TOOLBOX</small><h2>TOOLS & RESOURCES</h2><p>Useful learning resources and safe practice environments are coming soon.</p></div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="section-head"><small>STAY CONNECTED</small><h2>CONTACT VAIROUS7X</h2><p>Follow the journey as the platform grows.</p></div></div></section>
+</main>
+<footer>© 2026 <b>VAIROUS7X</b> — LEARN • EXPLORE • HACK</footer>
+</body></html>
